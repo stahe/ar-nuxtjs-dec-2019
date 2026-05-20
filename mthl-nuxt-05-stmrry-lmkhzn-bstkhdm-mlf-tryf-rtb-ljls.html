@@ -908,7 +908,7 @@
   </li>
 </ul>
 
-<p>وبذلك تتم إضافة وحدة نمطية جديدة إلى ملف [<bdi dir="ltr" class="odt-ltr-term">package.json</bdi>] لمشروع [<bdi dir="ltr" class="odt-ltr-term">dvp</bdi>]:</p>
+<p>وبذلك تتم إضافة وحدة نمطية جديدة إلى ملف [<bdi dir="ltr" class="odt-ltr-term">package.json</bdi>] لمشروع [dvp]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">},</span></span>
@@ -1033,7 +1033,7 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 79: أضفنا المفتاح [<bdi dir="ltr" class="odt-ltr-term">env</bdi>] إلى الملف. هذا المفتاح هو كلمة محجوزة. العناصر المعلنة في هذا الكائن متاحة عبر الكائن [<bdi dir="ltr" class="odt-ltr-term">context.env</bdi>] في عناصر التطبيق؛
+  <li>السطر 79: أضفنا المفتاح [env] إلى الملف. هذا المفتاح هو كلمة محجوزة. العناصر المعلنة في هذا الكائن متاحة عبر الكائن [<bdi dir="ltr" class="odt-ltr-term">context.env</bdi>] في عناصر التطبيق؛
   </li>
   <li>السطر 80: ستكون السمة [<bdi dir="ltr" class="odt-ltr-term">maxAge</bdi>] هي المدة القصوى لملف تعريف الارتباط للجلسة، محسوبة من آخر مرة تم فيها تهيئة ملف تعريف الارتباط. يتم التعبير عن هذه المدة بالثواني. هنا، قمنا بتعيين مدة صلاحية تبلغ 5 دقائق؛
   </li>
@@ -1047,7 +1047,7 @@
   </li>
 </ul>
 
-<p>يتم استرداد ملف تعريف ارتباط معين باستخدام التعبير [...$<bdi dir="ltr" class="odt-ltr-term">cookies.</bdi><strong><bdi dir="ltr" class="odt-ltr-term">get</bdi></strong>(&#x27;<bdi dir="ltr" class="odt-ltr-term">cookie</bdi>_name&#x27;)]. يتم تعيين قيمة ملف تعريف الارتباط باستخدام التعبير [...$<bdi dir="ltr" class="odt-ltr-term">cookies.</bdi><strong><bdi dir="ltr" class="odt-ltr-term">set</bdi></strong>(&#x27;<bdi dir="ltr" class="odt-ltr-term">cookie</bdi>_name&#x27;, <bdi dir="ltr" class="odt-ltr-term">cookie</bdi>_value)].</p>
+<p>يتم استرداد ملف تعريف ارتباط معين باستخدام التعبير [...$<bdi dir="ltr" class="odt-ltr-term">cookies.</bdi><strong>get</strong>(&#x27;<bdi dir="ltr" class="odt-ltr-term">cookie</bdi>_name&#x27;)]. يتم تعيين قيمة ملف تعريف الارتباط باستخدام التعبير [...$<bdi dir="ltr" class="odt-ltr-term">cookies.</bdi><strong>set</strong>(&#x27;<bdi dir="ltr" class="odt-ltr-term">cookie</bdi>_name&#x27;, <bdi dir="ltr" class="odt-ltr-term">cookie</bdi>_value)].</p>
 <p>المبدأ الكامن وراء ملف تعريف الارتباط الدائم للمتجر هو كما يلي:</p>
 <ul>
   <li>عندما يقوم الخادم بتهيئة المخزن في دالة [<bdi dir="ltr" class="odt-ltr-term">nuxtServerInit</bdi>]، سيتم تخزين حالة المخزن في ملف تعريف ارتباط باسم &quot;<bdi dir="ltr" class="odt-ltr-term">session</bdi>&quot;؛
@@ -1157,7 +1157,7 @@
     <ul>
       <li>ثم، في السطر 53، سيتم إنشاء ملف تعريف ارتباط باسم &quot;<bdi dir="ltr" class="odt-ltr-term">session</bdi>&quot; ووضعه في استجابة <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> للخادم. قيمة ملف تعريف الارتباط هي الكائن [<span style="color: #000000">{ <bdi dir="ltr" class="odt-ltr-term">store: store.state</bdi> }</span>]. وبالتالي، فإن حالة المخزن، وليس المخزن نفسه، هي التي يتم وضعها في ملف تعريف ارتباط الجلسة؛
       </li>
-      <li>المعلمة الثالثة لدالة [<bdi dir="ltr" class="odt-ltr-term">set</bdi>] هي كائن خيارات:
+      <li>المعلمة الثالثة لدالة [set] هي كائن خيارات:
         <ul>
           <li>يحدد [<bdi dir="ltr" class="odt-ltr-term">path</bdi>] عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الذي يجب إرسال ملف تعريف الارتباط هذا إليه. [<bdi dir="ltr" class="odt-ltr-term">context.base</bdi>] هو عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الأساسي لتطبيق [<bdi dir="ltr" class="odt-ltr-term">nuxt-05</bdi>]. يتم تعريف هذا في ملف [<bdi dir="ltr" class="odt-ltr-term">nuxt.config.js</bdi>]:
           </li>
@@ -1192,15 +1192,15 @@
 <a id="__codelineno-0-3" name="__codelineno-0-3"></a>    maxAge: 60 * 5
 <a id="__codelineno-0-4" name="__codelineno-0-4"></a>}
 </code></pre></div></td></tr></table></div>
-<p>[<bdi dir="ltr" class="odt-ltr-term">env</bdi>] هي كلمة رئيسية محجوزة في ملف التكوين. هنا، نحدد مدة الصلاحية بـ 5 دقائق. تُحسب هذه المدة من آخر مرة تلقى فيها المتصفح ملف تعريف الارتباط الخاص بالجلسة. بعد هذه المدة، لن يتم إرسال ملف تعريف الارتباط إلى الخادم، والذي سيحتاج عندئذٍ إلى بدء جلسة جديدة؛</p>
+<p>[env] هي كلمة رئيسية محجوزة في ملف التكوين. هنا، نحدد مدة الصلاحية بـ 5 دقائق. تُحسب هذه المدة من آخر مرة تلقى فيها المتصفح ملف تعريف الارتباط الخاص بالجلسة. بعد هذه المدة، لن يتم إرسال ملف تعريف الارتباط إلى الخادم، والذي سيحتاج عندئذٍ إلى بدء جلسة جديدة؛</p>
 <ul>
   <li>الأسطر 48–50: إذا تلقى الخادم ملف تعريف ارتباط الجلسة، يتم تهيئة حالة المتجر باستخدام كائن [<bdi dir="ltr" class="odt-ltr-term">store</bdi>] من ملف تعريف ارتباط الجلسة. تذكر أن هذا الكائن يحتوي على الحالة المحفوظة للمتجر؛
     <ul>
       <li>ثم، في السطر 53، يتم وضع ملف تعريف ارتباط الجلسة في الاستجابة المرسلة إلى متصفح العميل:
         <ul>
-          <li>تسترد الدالة [<bdi dir="ltr" class="odt-ltr-term">get</bdi>] ملف تعريف الارتباط للجلسة من <b>الطلب </b>الذي<b> تلقّاه </b>الخادم؛
+          <li>تسترد الدالة [get] ملف تعريف الارتباط للجلسة من <b>الطلب </b>الذي<b> تلقّاه </b>الخادم؛
           </li>
-          <li>تضع الدالة [<bdi dir="ltr" class="odt-ltr-term">set</bdi>] ملف تعريف ارتباط الجلسة في <b>الاستجابة </b>التي يرسلها الخادم إلى متصفح العميل؛
+          <li>تضع الدالة [set] ملف تعريف ارتباط الجلسة في <b>الاستجابة </b>التي يرسلها الخادم إلى متصفح العميل؛
           </li>
         </ul>
       </li>

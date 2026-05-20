@@ -955,13 +955,13 @@
 
 <h1 id="3-nuxtjs">3. <span style="color: #365f91">أول تطبيق [<bdi dir="ltr" class="odt-ltr-term">nuxt.js</bdi>]</span></h1>
 <h2 id="31">3.1. <span style="color: #4f81bd">إنشاء التطبيق</span></h2>
-<p>بالنسبة لتطوير [<bdi dir="ltr" class="odt-ltr-term">nuxt.js</bdi>]، سنستمر في استخدام <bdi dir="ltr" class="odt-ltr-term">VS Code.</bdi> لقد أنشأنا مجلد [<bdi dir="ltr" class="odt-ltr-term">dvp</bdi>] فارغًا حيث سنضع أمثلةنا. ثم نفتح هذا المجلد:</p>
+<p>بالنسبة لتطوير [<bdi dir="ltr" class="odt-ltr-term">nuxt.js</bdi>]، سنستمر في استخدام <bdi dir="ltr" class="odt-ltr-term">VS Code.</bdi> لقد أنشأنا مجلد [dvp] فارغًا حيث سنضع أمثلةنا. ثم نفتح هذا المجلد:</p>
 <p><img src="images/10000000000005D80000015ECBE6E729.png" width="598" height="140" style="width:15.829cm;height:3.702cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000005D80000015ECBE6E729.png" /></p>
 <p>نحفظ مساحة العمل تحت اسم [<bdi dir="ltr" class="odt-ltr-term">intro-nuxtjs</bdi>] [3-5]:</p>
 <p><img src="images/100000000000074600000218B877227F.png" width="652" height="188" style="width:17.24cm;height:4.964cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000074600000218B877227F.png" /></p>
 <p>نفتح محطة طرفية [6-7]:</p>
 <p><img src="images/100000000000078F0000010C926D1C08.png" width="677" height="94" style="width:17.919cm;height:2.482cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000078F0000010C926D1C08.png" /></p>
-<p>حتى الآن، استخدمنا مدير حزم <bdi dir="ltr" class="odt-ltr-term">JavaScript</bdi> [<bdi dir="ltr" class="odt-ltr-term">npm</bdi>]. وللتغيير، سنستخدم مدير [<bdi dir="ltr" class="odt-ltr-term">yarn</bdi>] هنا. ومثل [<bdi dir="ltr" class="odt-ltr-term">npm</bdi>]، يتم تثبيته مع الإصدارات الحديثة من [<bdi dir="ltr" class="odt-ltr-term">node.js</bdi>]. لإنشاء أول تطبيق [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]، نستخدم الأمر [<bdi dir="ltr" class="odt-ltr-term">yarn create nuxt-app</bdi> &lt;<bdi dir="ltr" class="odt-ltr-term">folder</bdi>&gt;] [1]. سيطلب الأمر بعض المعلومات حول المشروع المراد إنشاؤه، وبمجرد توفير هذه المعلومات، سيقوم بإنشائه [2]:</p>
+<p>حتى الآن، استخدمنا مدير حزم <bdi dir="ltr" class="odt-ltr-term">JavaScript</bdi> [npm]. وللتغيير، سنستخدم مدير [<bdi dir="ltr" class="odt-ltr-term">yarn</bdi>] هنا. ومثل [npm]، يتم تثبيته مع الإصدارات الحديثة من [<bdi dir="ltr" class="odt-ltr-term">node.js</bdi>]. لإنشاء أول تطبيق [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]، نستخدم الأمر [<bdi dir="ltr" class="odt-ltr-term">yarn create nuxt-app</bdi> &lt;<bdi dir="ltr" class="odt-ltr-term">folder</bdi>&gt;] [1]. سيطلب الأمر بعض المعلومات حول المشروع المراد إنشاؤه، وبمجرد توفير هذه المعلومات، سيقوم بإنشائه [2]:</p>
 <p><img src="images/10000000000006E1000003B79F28C53F.png" width="616" height="333" style="width:16.311cm;height:8.809cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000006E1000003B79F28C53F.png" /></p>
 <p>في [2]، تم إنشاء شجرة ملفات كاملة. يسرد ملف [<bdi dir="ltr" class="odt-ltr-term">package.json</bdi>] مكتبات <bdi dir="ltr" class="odt-ltr-term">JavaScript</bdi> التي تم تنزيلها إلى مجلد [<bdi dir="ltr" class="odt-ltr-term">node-modules</bdi>] [4]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
@@ -1094,7 +1094,7 @@
     <ul>
       <li>[<b><bdi dir="ltr" class="odt-ltr-term">universal</bdi></b>]: تطبيق عميل/خادم. عند تحميل التطبيق لأول مرة، وكذلك مع كل تحديث للصفحة في المتصفح، يُطلب من الخادم تقديم الصفحة؛
       </li>
-      <li>[<b><bdi dir="ltr" class="odt-ltr-term">sap</bdi></b>]: نوع [تطبيق صفحة واحدة]: يقوم الخادم في البداية بتسليم التطبيق بالكامل. بعد ذلك، يعمل العميل بشكل مستقل، حتى عند تحديث الصفحة في المتصفح؛
+      <li>[<b>sap</b>]: نوع [تطبيق صفحة واحدة]: يقوم الخادم في البداية بتسليم التطبيق بالكامل. بعد ذلك، يعمل العميل بشكل مستقل، حتى عند تحديث الصفحة في المتصفح؛
       </li>
     </ul>
   </li>
@@ -1212,7 +1212,7 @@
 <ul>
   <li>السطر 12: بين كل مسار في عميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]، يظهر شريط تحميل إذا استغرق تغيير المسار بعض الوقت. تسمح لك الخاصية [<bdi dir="ltr" class="odt-ltr-term">loading</bdi>] بتكوين شريط التحميل هذا؛ هنا، لون الشريط؛
   </li>
-  <li>السطر 16: ملفات [<bdi dir="ltr" class="odt-ltr-term">css</bdi>] العامة. سيتم تضمينها تلقائيًا في جميع صفحات التطبيق؛
+  <li>السطر 16: ملفات [css] العامة. سيتم تضمينها تلقائيًا في جميع صفحات التطبيق؛
   </li>
   <li>الأسطر 24-27: وحدات <bdi dir="ltr" class="odt-ltr-term">JavaScript</bdi> المطلوبة لبناء التطبيق؛
   </li>
@@ -1559,7 +1559,7 @@
 </code></pre></div>
 
 <ul>
-  <li>الأسطر 2–11: تحدد أنه عند قيام [<bdi dir="ltr" class="odt-ltr-term">eslint</bdi>] بالتحقق من صحة ملفات .<bdi dir="ltr" class="odt-ltr-term">vue</bdi> و .<bdi dir="ltr" class="odt-ltr-term">js</bdi>، يجب عليه إصلاح أي أخطاء يمكنه إصلاحها؛
+  <li>الأسطر 2–11: تحدد أنه عند قيام [<bdi dir="ltr" class="odt-ltr-term">eslint</bdi>] بالتحقق من صحة ملفات .vue و .js، يجب عليه إصلاح أي أخطاء يمكنه إصلاحها؛
   </li>
   <li>السطر 12: عند حفظ ملف، يجب على [<bdi dir="ltr" class="odt-ltr-term">eslint</bdi>] إصلاح أي أخطاء يمكنه إصلاحها؛
   </li>
@@ -1626,7 +1626,7 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 7: نضيف الأمر [<bdi dir="ltr" class="odt-ltr-term">lintfix</bdi>]، وهو مطابق للأمر [<bdi dir="ltr" class="odt-ltr-term">lint</bdi>] في السطر 6 باستثناء أنه يتضمن المعلمة [--<bdi dir="ltr" class="odt-ltr-term">fix</bdi>]. يقوم الأمر [<bdi dir="ltr" class="odt-ltr-term">lint</bdi>] بفحص بناء الجملة وتنسيق جميع الملفات في المشروع والإبلاغ عن أي أخطاء. سيقوم [<bdi dir="ltr" class="odt-ltr-term">lintfix</bdi>] بنفس الشيء، باستثناء أن أي مشكلات في التنسيق يمكن تصحيحها سيتم إصلاحها تلقائيًا. [<bdi dir="ltr" class="odt-ltr-term">lintfix</bdi>] هو الأمر الذي يجب استخدامه إذا فشل البناء بسبب مشكلات في تنسيق الملفات؛
+  <li>السطر 7: نضيف الأمر [<bdi dir="ltr" class="odt-ltr-term">lintfix</bdi>]، وهو مطابق للأمر [<bdi dir="ltr" class="odt-ltr-term">lint</bdi>] في السطر 6 باستثناء أنه يتضمن المعلمة [--fix]. يقوم الأمر [<bdi dir="ltr" class="odt-ltr-term">lint</bdi>] بفحص بناء الجملة وتنسيق جميع الملفات في المشروع والإبلاغ عن أي أخطاء. سيقوم [<bdi dir="ltr" class="odt-ltr-term">lintfix</bdi>] بنفس الشيء، باستثناء أن أي مشكلات في التنسيق يمكن تصحيحها سيتم إصلاحها تلقائيًا. [<bdi dir="ltr" class="odt-ltr-term">lintfix</bdi>] هو الأمر الذي يجب استخدامه إذا فشل البناء بسبب مشكلات في تنسيق الملفات؛
   </li>
 </ul>
 
@@ -1687,7 +1687,7 @@
   </li>
 </ol>
 
-<p>ما تحتاج إلى فهمه هو أن هذه هي <strong>نفس الصفحات</strong> الموجودة في مجلد [<bdi dir="ltr" class="odt-ltr-term">pages</bdi>] التي يتم تقديمها إما من قبل الخادم أو العميل. لهذا السبب، يطلق مطورو [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] على هذا النوع من الصفحات اسم الصفحة <strong>المتماثلة</strong>. يمكن تفسير نفس صفحات [.<bdi dir="ltr" class="odt-ltr-term">vue</bdi>] من قبل كل من العميل والخادم. لنأخذ مثال صفحة [<bdi dir="ltr" class="odt-ltr-term">index</bdi>]:</p>
+<p>ما تحتاج إلى فهمه هو أن هذه هي <strong>نفس الصفحات</strong> الموجودة في مجلد [<bdi dir="ltr" class="odt-ltr-term">pages</bdi>] التي يتم تقديمها إما من قبل الخادم أو العميل. لهذا السبب، يطلق مطورو [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] على هذا النوع من الصفحات اسم الصفحة <strong>المتماثلة</strong>. يمكن تفسير نفس صفحات [.vue] من قبل كل من العميل والخادم. لنأخذ مثال صفحة [<bdi dir="ltr" class="odt-ltr-term">index</bdi>]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-html">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;</span>template<span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span>&lt;<span style="color:#800000">div</span><span style="color:#000000"> </span><span style="color:#ff0000">class</span>=&quot;container&quot;&gt;</span></span>
@@ -1737,7 +1737,7 @@
 <ul>
   <li>[1]: المتصفح الذي يستضيف تطبيق [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] بمجرد تحميله في المتصفح. وهذا ما نسميه عميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]؛
   </li>
-  <li>[3]: الخادم الذي يستضيف تطبيق [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] في البداية. يتم تحميله في المتصفح [1] عند بدء تشغيل التطبيق وفي كل مرة يقوم فيها المستخدم بتحديث صفحة المتصفح الحالية أو إدخال عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> للتطبيق يدويًا. هنا يكمن الاختلاف في التشغيل مقارنةً بتطبيق <bdi dir="ltr" class="odt-ltr-term">Vue</bdi> الكلاسيكي. مع تطبيق <bdi dir="ltr" class="odt-ltr-term">Vue</bdi> الكلاسيكي، بمجرد تحميله في المتصفح، لم يتم استدعاء الخادم مرة أخرى أبدًا. هناك اختلاف مهم آخر لم نره بعد، وهو أن الخادم لتطبيق <bdi dir="ltr" class="odt-ltr-term">Vue</bdi> هو خادم ثابت، غير قادر على تفسير صفحات [.<bdi dir="ltr" class="odt-ltr-term">vue</bdi>]، في حين أن الخادم لتطبيق <bdi dir="ltr" class="odt-ltr-term">Nuxt</bdi> [<bdi dir="ltr" class="odt-ltr-term">universal</bdi>] هو خادم <bdi dir="ltr" class="odt-ltr-term">JavaScript.</bdi> قبل إرسال الصفحة إلى المتصفح، يمكن للخادم تنفيذ البرامج النصية، وعلى سبيل المثال، جلب البيانات من الخادم [2]؛
+  <li>[3]: الخادم الذي يستضيف تطبيق [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] في البداية. يتم تحميله في المتصفح [1] عند بدء تشغيل التطبيق وفي كل مرة يقوم فيها المستخدم بتحديث صفحة المتصفح الحالية أو إدخال عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> للتطبيق يدويًا. هنا يكمن الاختلاف في التشغيل مقارنةً بتطبيق <bdi dir="ltr" class="odt-ltr-term">Vue</bdi> الكلاسيكي. مع تطبيق <bdi dir="ltr" class="odt-ltr-term">Vue</bdi> الكلاسيكي، بمجرد تحميله في المتصفح، لم يتم استدعاء الخادم مرة أخرى أبدًا. هناك اختلاف مهم آخر لم نره بعد، وهو أن الخادم لتطبيق <bdi dir="ltr" class="odt-ltr-term">Vue</bdi> هو خادم ثابت، غير قادر على تفسير صفحات [.vue]، في حين أن الخادم لتطبيق <bdi dir="ltr" class="odt-ltr-term">Nuxt</bdi> [<bdi dir="ltr" class="odt-ltr-term">universal</bdi>] هو خادم <bdi dir="ltr" class="odt-ltr-term">JavaScript.</bdi> قبل إرسال الصفحة إلى المتصفح، يمكن للخادم تنفيذ البرامج النصية، وعلى سبيل المثال، جلب البيانات من الخادم [2]؛
   </li>
   <li>[2]: هو الخادم الذي يوفر البيانات إما لعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] [1] أو لخادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] [3]؛
   </li>
@@ -1753,10 +1753,10 @@
   </li>
 </ul>
 
-<p>وبالتالي، فإن الخادم [3] هو الذي يميز تطبيق [<bdi dir="ltr" class="odt-ltr-term">Nuxt</bdi>] عن تطبيق [<bdi dir="ltr" class="odt-ltr-term">Vue</bdi>]. يتم استدعاء هذا الخادم في كل مرة يطلب فيها المستخدم صفحة يدويًا. وهو يعالج نفس صفحات [.<bdi dir="ltr" class="odt-ltr-term">vue</bdi>] التي يعالجها عميل [<bdi dir="ltr" class="odt-ltr-term">Vue</bdi>] [1]. وهو خادم <bdi dir="ltr" class="odt-ltr-term">JavaScript</bdi> قادر على تنفيذ البرامج النصية الموجودة على الصفحة. وهذا يمكن، على سبيل المثال، أن يغير طريقة إنشاء الصفحة الرئيسية باستخدام البيانات الخارجية: في حين أن تطبيق [<bdi dir="ltr" class="odt-ltr-term">vue</bdi>] يسترد هذه البيانات بالضرورة من العميل [1]، هنا يمكن استردادها بواسطة الخادم [3] قبل إرسال الصفحة إلى العميل. وبذلك تصبح الصفحة الرئيسية ذات مغزى ويمكن أن تساعد في تحسين تحسين محركات البحث (<bdi dir="ltr" class="odt-ltr-term">SEO</bdi>) للتطبيق.</p>
+<p>وبالتالي، فإن الخادم [3] هو الذي يميز تطبيق [<bdi dir="ltr" class="odt-ltr-term">Nuxt</bdi>] عن تطبيق [<bdi dir="ltr" class="odt-ltr-term">Vue</bdi>]. يتم استدعاء هذا الخادم في كل مرة يطلب فيها المستخدم صفحة يدويًا. وهو يعالج نفس صفحات [.vue] التي يعالجها عميل [<bdi dir="ltr" class="odt-ltr-term">Vue</bdi>] [1]. وهو خادم <bdi dir="ltr" class="odt-ltr-term">JavaScript</bdi> قادر على تنفيذ البرامج النصية الموجودة على الصفحة. وهذا يمكن، على سبيل المثال، أن يغير طريقة إنشاء الصفحة الرئيسية باستخدام البيانات الخارجية: في حين أن تطبيق [vue] يسترد هذه البيانات بالضرورة من العميل [1]، هنا يمكن استردادها بواسطة الخادم [3] قبل إرسال الصفحة إلى العميل. وبذلك تصبح الصفحة الرئيسية ذات مغزى ويمكن أن تساعد في تحسين تحسين محركات البحث (<bdi dir="ltr" class="odt-ltr-term">SEO</bdi>) للتطبيق.</p>
 <p><strong>ملاحظة</strong>: في وضع التطوير، غالبًا ما تكون الكيانات الثلاثة [1، 2، 3] موجودة على نفس الجهاز. وسيكون هذا هو الحال هنا في جميع أمثلةنا.</p>
 <h2 id="39">3.9. <span style="color: #4f81bd">نقل كود مصدر التطبيق إلى مجلد منفصل</span></h2>
-<p>بعد ذلك، سننشئ تطبيقات [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] متنوعة في نفس مجلد [<bdi dir="ltr" class="odt-ltr-term">dvp</bdi>]. وذلك لأن مجلد التبعيات [<bdi dir="ltr" class="odt-ltr-term">node</bdi>_modules] الذي يتم إنشاؤه لكل مشروع [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] يمكن أن يصل حجمه إلى عدة مئات من الميغابايت. سننشئ مجلدات مختلفة [<bdi dir="ltr" class="odt-ltr-term">nuxt-00</bdi>، <bdi dir="ltr" class="odt-ltr-term">nuxt-01</bdi>، ...] داخل مجلد [<bdi dir="ltr" class="odt-ltr-term">dvp</bdi>] لتخزين شفرة المصدر للأمثلة التي سيتم اختبارها. ثم سنستخدم ملف التكوين [<bdi dir="ltr" class="odt-ltr-term">nuxt-config.js</bdi>] لتحديد موقع شفرة المصدر لمشروع [<bdi dir="ltr" class="odt-ltr-term">dvp</bdi>]، الذي سيظل المشروع [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] الوحيد في هذا البرنامج التعليمي.</p>
+<p>بعد ذلك، سننشئ تطبيقات [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] متنوعة في نفس مجلد [dvp]. وذلك لأن مجلد التبعيات [<bdi dir="ltr" class="odt-ltr-term">node</bdi>_modules] الذي يتم إنشاؤه لكل مشروع [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] يمكن أن يصل حجمه إلى عدة مئات من الميغابايت. سننشئ مجلدات مختلفة [<bdi dir="ltr" class="odt-ltr-term">nuxt-00</bdi>، <bdi dir="ltr" class="odt-ltr-term">nuxt-01</bdi>، ...] داخل مجلد [dvp] لتخزين شفرة المصدر للأمثلة التي سيتم اختبارها. ثم سنستخدم ملف التكوين [<bdi dir="ltr" class="odt-ltr-term">nuxt-config.js</bdi>] لتحديد موقع شفرة المصدر لمشروع [dvp]، الذي سيظل المشروع [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] الوحيد في هذا البرنامج التعليمي.</p>
 <p>ننقل شفرة المصدر للتطبيق التي تم إنشاؤها مبدئيًا بواسطة الأمر [<bdi dir="ltr" class="odt-ltr-term">yarn create nuxt-app</bdi>] إلى مجلد [<bdi dir="ltr" class="odt-ltr-term">nuxt-00</bdi>]:</p>
 <p><img src="images/1000000000000472000003BE4895B017.png" width="455" height="383" style="width:12.04cm;height:10.135cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000472000003BE4895B017.png" /></p>
 <ul>
@@ -1803,13 +1803,13 @@
 
 <p>تم تعديل الملف في موضعين:</p>
 <ul>
-  <li>السطر 17: نحدد أن شفرة المصدر لمشروع [<bdi dir="ltr" class="odt-ltr-term">dvp</bdi>] موجودة في المجلد [<bdi dir="ltr" class="odt-ltr-term">nuxt-00</bdi>]؛
+  <li>السطر 17: نحدد أن شفرة المصدر لمشروع [dvp] موجودة في المجلد [<bdi dir="ltr" class="odt-ltr-term">nuxt-00</bdi>]؛
   </li>
   <li>السطر 21: نحدد أن عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الجذر للتطبيق هو الآن [/<bdi dir="ltr" class="odt-ltr-term">nuxt-00/</bdi>]. لم يكن هذا التغيير إلزامياً. كان بإمكاننا حذف هذه الخاصية، وفي هذه الحالة سيكون جذر عناوين <bdi dir="ltr" class="odt-ltr-term">URL</bdi> هو [/]. هنا، سيساعدنا هذا على تذكر أن شفرة المصدر التي يتم تنفيذها موجودة في المجلد [<bdi dir="ltr" class="odt-ltr-term">nuxt-00</bdi>]؛
   </li>
 </ul>
 
-<p>بمجرد الانتهاء من ذلك، يتم تنفيذ مشروع [<bdi dir="ltr" class="odt-ltr-term">dvp</bdi>] كما كان من قبل:</p>
+<p>بمجرد الانتهاء من ذلك، يتم تنفيذ مشروع [dvp] كما كان من قبل:</p>
 <p><img src="images/10000000000004F6000002E2FA7C784D.png" width="572" height="332" style="width:15.122cm;height:8.788cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000004F6000002E2FA7C784D.png" /></p>
 <p><a id="nuxt00deploiement"></a>
 <a id="refheadingtoc641993669820992"></a></p>
@@ -1868,7 +1868,7 @@
   </li>
 </ul>
 
-<p>بمجرد الانتهاء من ذلك، افتح محطة <bdi dir="ltr" class="odt-ltr-term">Laragon</bdi> وانتقل إلى المجلد الذي يحتوي على النسخة المُجمَّعة من المشروع. يمكنك فتح أي نوع من المحطات، ولكن يجب أن يكون الملف القابل للتنفيذ [<bdi dir="ltr" class="odt-ltr-term">npm</bdi>] موجودًا في مسار <bdi dir="ltr" class="odt-ltr-term">PATH</bdi> الخاص بالمحطة. وهذا هو الحال بالنسبة لمحطة <bdi dir="ltr" class="odt-ltr-term">Laragon.</bdi></p>
+<p>بمجرد الانتهاء من ذلك، افتح محطة <bdi dir="ltr" class="odt-ltr-term">Laragon</bdi> وانتقل إلى المجلد الذي يحتوي على النسخة المُجمَّعة من المشروع. يمكنك فتح أي نوع من المحطات، ولكن يجب أن يكون الملف القابل للتنفيذ [npm] موجودًا في مسار <bdi dir="ltr" class="odt-ltr-term">PATH</bdi> الخاص بالمحطة. وهذا هو الحال بالنسبة لمحطة <bdi dir="ltr" class="odt-ltr-term">Laragon.</bdi></p>
 <p>بمجرد الانتهاء من ذلك، اكتب الأمر [<bdi dir="ltr" class="odt-ltr-term">npm run start</bdi>]:</p>
 <p><img src="images/10000000000005380000035D5ABF0D4A.png" width="668" height="430" style="width:17.671cm;height:11.388cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000005380000035D5ABF0D4A.png" /></p>
 <p>في [3]، نرى أنه تم تشغيل خادم وهو يستمع على عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [<bdi dir="ltr" class="odt-ltr-term">http://192.168.1.128:81/nuxt-00/</bdi>]. الآن دعونا نطلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> هذا باستخدام متصفح [4]. نرى نفس النتيجة كما في السابق. في المحطة الطرفية، تمت كتابة السجلات [5]. هذا هو السجل الموجود في طريقة [<bdi dir="ltr" class="odt-ltr-term">created</bdi>] لصفحة [<bdi dir="ltr" class="odt-ltr-term">index.vue</bdi>]، والتي تم تنفيذها بواسطة خادم [<bdi dir="ltr" class="odt-ltr-term">node.js</bdi>].</p>
@@ -1885,7 +1885,7 @@
   </li>
   <li>في [3]، يتم إنشاء ملف [<bdi dir="ltr" class="odt-ltr-term">server.key</bdi>]؛
   </li>
-  <li>في [4]، اكتب الأمر [<bdi dir="ltr" class="odt-ltr-term">openssl req</bdi> -<bdi dir="ltr" class="odt-ltr-term">new</bdi> -<bdi dir="ltr" class="odt-ltr-term">x509</bdi> -<bdi dir="ltr" class="odt-ltr-term">nodes</bdi> -<bdi dir="ltr" class="odt-ltr-term">sha256</bdi> -<bdi dir="ltr" class="odt-ltr-term">days</bdi> 365 -<bdi dir="ltr" class="odt-ltr-term">key server.key</bdi> -<bdi dir="ltr" class="odt-ltr-term">out server.crt</bdi>]؛
+  <li>في [4]، اكتب الأمر [<bdi dir="ltr" class="odt-ltr-term">openssl req</bdi> -new -<bdi dir="ltr" class="odt-ltr-term">x509</bdi> -<bdi dir="ltr" class="odt-ltr-term">nodes</bdi> -<bdi dir="ltr" class="odt-ltr-term">sha256</bdi> -<bdi dir="ltr" class="odt-ltr-term">days</bdi> 365 -<bdi dir="ltr" class="odt-ltr-term">key server.key</bdi> -<bdi dir="ltr" class="odt-ltr-term">out server.crt</bdi>]؛
   </li>
   <li>في [5]، يتم إنشاء ملف باسم [<bdi dir="ltr" class="odt-ltr-term">server.crt</bdi>]؛
   </li>

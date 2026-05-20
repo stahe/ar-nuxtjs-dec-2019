@@ -1182,24 +1182,24 @@
   </li>
   <li>الأسطر 64-72: إذا حدثت إعادة توجيه، نقوم بتسجيلها في مخزن خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]: [<span style="color: #000000"><bdi dir="ltr" class="odt-ltr-term">serverRedirection:</bdi> </span><span style="color: #0000ff"><bdi dir="ltr" class="odt-ltr-term">true</bdi></span>]. لاحظ أننا لا نعين قيمة لخاصية [<bdi dir="ltr" class="odt-ltr-term">from</bdi>] في المخزن. والسبب هو أنه ستكون هناك إعادة توجيه من متصفح العميل، وقد رأينا أنه في هذه الحالة، لم يكن هناك توجيه (الأسطر 17–20) ولا تُستخدم خاصية [<bdi dir="ltr" class="odt-ltr-term">from</bdi>] في المخزن؛
   </li>
-  <li>الأسطر 66–69: إذا لم تكن هناك إعادة توجيه، يتم تدوين ذلك أيضًا في مخزن خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]: [<span style="color: #000000"><bdi dir="ltr" class="odt-ltr-term">serverRedirection:</bdi> </span><span style="color: #0000ff"><bdi dir="ltr" class="odt-ltr-term">false</bdi></span>]. بالإضافة إلى ذلك، سيعرض التوجيه الحالي الصفحة [<bdi dir="ltr" class="odt-ltr-term">to</bdi>]، والتي ستصبح الصفحة السابقة للطلب التالي (العميل أو خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]). لهذا السبب نكتب [<span style="color: #000000"><mark style="background-color: #ffff00"><bdi dir="ltr" class="odt-ltr-term">from: to</bdi></mark></span>]؛
+  <li>الأسطر 66–69: إذا لم تكن هناك إعادة توجيه، يتم تدوين ذلك أيضًا في مخزن خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]: [<span style="color: #000000"><bdi dir="ltr" class="odt-ltr-term">serverRedirection:</bdi> </span><span style="color: #0000ff"><bdi dir="ltr" class="odt-ltr-term">false</bdi></span>]. بالإضافة إلى ذلك، سيعرض التوجيه الحالي الصفحة [to]، والتي ستصبح الصفحة السابقة للطلب التالي (العميل أو خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]). لهذا السبب نكتب [<span style="color: #000000"><mark style="background-color: #ffff00"><bdi dir="ltr" class="odt-ltr-term">from: to</bdi></mark></span>]؛
   </li>
   <li>الأسطر 73-76: نقوم بحفظ المخزن في جلسة [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]، والتي يتم حفظها بدورها في ملف تعريف ارتباط؛
   </li>
-  <li>الأسطر 77–80: إذا لم يكن [<bdi dir="ltr" class="odt-ltr-term">redirection</bdi>] فارغًا، فإننا نوجه المتصفح لإعادة التوجيه. خلاف ذلك (غير موضح هنا)، ستستمر دورة حياة خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]: ستتم معالجة الصفحة [<bdi dir="ltr" class="odt-ltr-term">to</bdi>] بواسطة خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] وإرسالها إلى متصفح عميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] مع ملف تعريف ارتباط جلسة عمل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]؛
+  <li>الأسطر 77–80: إذا لم يكن [<bdi dir="ltr" class="odt-ltr-term">redirection</bdi>] فارغًا، فإننا نوجه المتصفح لإعادة التوجيه. خلاف ذلك (غير موضح هنا)، ستستمر دورة حياة خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]: ستتم معالجة الصفحة [to] بواسطة خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] وإرسالها إلى متصفح عميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] مع ملف تعريف ارتباط جلسة عمل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]؛
   </li>
 </ul>
 
 <p>التوجيه المختار هنا لخادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] هو اختيار تعسفي. كان بإمكاننا اختيار توجيه آخر أو، كما ذكرنا، عدم استخدام التوجيه على الإطلاق. يتميز التوجيه المختار أعلاه بميزة الحفاظ دائمًا على التطبيق في حالة مستقرة بغض النظر عن عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الذي يطلبه المستخدم.</p>
 <p>يمكننا تحسين هذا قليلاً عندما تكون الصفحة التي يتم تحميلها في النهاية هي الصفحة الأصلية. هناك حالتان:</p>
 <ul>
-  <li>قام المستخدم بتشغيل إعادة تحميل الصفحة (<bdi dir="ltr" class="odt-ltr-term">to</bdi>===<bdi dir="ltr" class="odt-ltr-term">from</bdi>)؛
+  <li>قام المستخدم بتشغيل إعادة تحميل الصفحة (to===<bdi dir="ltr" class="odt-ltr-term">from</bdi>)؛
   </li>
   <li>وجود عمليات إعادة توجيه إلى الصفحة الأصلية (<bdi dir="ltr" class="odt-ltr-term">redirection</bdi>===<bdi dir="ltr" class="odt-ltr-term">from</bdi>)؛
   </li>
 </ul>
 
-<p>في كلتا الحالتين، سيتم تنفيذ الصفحة الأصلية مرة أخرى مع استدعاءها غير المتزامن لخادم حساب الضرائب. لنأخذ مثالاً. إذا قام المستخدم، بعد المصادقة، بإعادة تحميل الصفحة (<bdi dir="ltr" class="odt-ltr-term">F5</bdi>). في هذه الحالة، في التوجيه أعلاه، لدينا: [<bdi dir="ltr" class="odt-ltr-term">to</bdi>]=[<bdi dir="ltr" class="odt-ltr-term">from</bdi>]=[<bdi dir="ltr" class="odt-ltr-term">authentication</bdi>]. لا توجد إعادة توجيه. سيتم تنفيذ الصفحة [<bdi dir="ltr" class="odt-ltr-term">to</bdi>=<bdi dir="ltr" class="odt-ltr-term">authentication</bdi>] بواسطة خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]. إذا لم نفعل شيئًا، فستعمل الدالة [<bdi dir="ltr" class="odt-ltr-term">asyncData</bdi>] مرة أخرى. وهذا غير ضروري لأن المصادقة قد تمت بالفعل.</p>
+<p>في كلتا الحالتين، سيتم تنفيذ الصفحة الأصلية مرة أخرى مع استدعاءها غير المتزامن لخادم حساب الضرائب. لنأخذ مثالاً. إذا قام المستخدم، بعد المصادقة، بإعادة تحميل الصفحة (<bdi dir="ltr" class="odt-ltr-term">F5</bdi>). في هذه الحالة، في التوجيه أعلاه، لدينا: [to]=[<bdi dir="ltr" class="odt-ltr-term">from</bdi>]=[<bdi dir="ltr" class="odt-ltr-term">authentication</bdi>]. لا توجد إعادة توجيه. سيتم تنفيذ الصفحة [to=<bdi dir="ltr" class="odt-ltr-term">authentication</bdi>] بواسطة خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]. إذا لم نفعل شيئًا، فستعمل الدالة [<bdi dir="ltr" class="odt-ltr-term">asyncData</bdi>] مرة أخرى. وهذا غير ضروري لأن المصادقة قد تمت بالفعل.</p>
 <p>يمكننا تحسين ذلك عن طريق تعديل صفحة [<bdi dir="ltr" class="odt-ltr-term">authentication</bdi>] قليلاً:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
 <span class="odt-code-line"><span class="odt-code-line-content">// asynchronous data</span></span>

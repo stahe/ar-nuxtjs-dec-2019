@@ -1179,7 +1179,7 @@
 <p>يمكن تبسيط بنية المثال على النحو التالي:</p>
 <p><img src="images/10000000000004660000036A2523CCDB.png" width="338" height="262" style="width:8.939cm;height:6.937cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000004660000036A2523CCDB.png" /></p>
 <ul>
-  <li>في [1]، يقوم خادم [<bdi dir="ltr" class="odt-ltr-term">node.js</bdi>] بتسليم صفحات [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] إلى المتصفح [2]. إن طبقة [<bdi dir="ltr" class="odt-ltr-term">web</bdi>] [8] في الخادم هي التي تقوم بتسليم هذه الصفحات. لتسليم الصفحة، قد يكون الخادم قد طلب بيانات خارجية من خادم البيانات [3]. إن طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] [9] هي التي تقوم بإجراء طلبات <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> الضرورية؛
+  <li>في [1]، يقوم خادم [<bdi dir="ltr" class="odt-ltr-term">node.js</bdi>] بتسليم صفحات [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] إلى المتصفح [2]. إن طبقة [web] [8] في الخادم هي التي تقوم بتسليم هذه الصفحات. لتسليم الصفحة، قد يكون الخادم قد طلب بيانات خارجية من خادم البيانات [3]. إن طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] [9] هي التي تقوم بإجراء طلبات <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> الضرورية؛
   </li>
   <li>مع كل طلب صفحة إلى خادم [<bdi dir="ltr" class="odt-ltr-term">Node.js</bdi>] [1]، يتلقى المتصفح [2] تطبيق [<bdi dir="ltr" class="odt-ltr-term">Nuxt</bdi>] بالكامل، والذي يعمل بعد ذلك في وضع <bdi dir="ltr" class="odt-ltr-term">SPA.</bdi> تعرض كتلة [<bdi dir="ltr" class="odt-ltr-term">UI</bdi>] (واجهة المستخدم) [4] صفحات [<bdi dir="ltr" class="odt-ltr-term">Vue.js</bdi>] للمستخدم. يمكن أن تؤدي إجراءات المستخدم أو دورة الحياة الطبيعية للصفحات إلى تشغيل طلبات للحصول على بيانات خارجية من خادم البيانات [3]. ثم تقوم طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] [5] بإجراء طلبات <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> اللازمة؛
   </li>
@@ -1296,7 +1296,7 @@
   </li>
   <li>السطر 54: ستسمح لنا وحدة [<bdi dir="ltr" class="odt-ltr-term">cookie-universal-nuxt</bdi>] بحفظ جلسة [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] في ملف تعريف ارتباط؛
   </li>
-  <li>السطر 60: تسمح لنا الخاصية [<bdi dir="ltr" class="odt-ltr-term">axios</bdi>] بتكوين وحدة [<span style="color: #a31515"><mark style="background-color: #ffff00">@<bdi dir="ltr" class="odt-ltr-term">nuxtjs/axios</bdi></mark></span>] من السطر 52. لن نستخدم هذا الخيار، بل نفضل بدلاً من ذلك الخاصية [<bdi dir="ltr" class="odt-ltr-term">env</bdi>] من السطر 88؛
+  <li>السطر 60: تسمح لنا الخاصية [<bdi dir="ltr" class="odt-ltr-term">axios</bdi>] بتكوين وحدة [<span style="color: #a31515"><mark style="background-color: #ffff00">@<bdi dir="ltr" class="odt-ltr-term">nuxtjs/axios</bdi></mark></span>] من السطر 52. لن نستخدم هذا الخيار، بل نفضل بدلاً من ذلك الخاصية [env] من السطر 88؛
   </li>
   <li>السطر 90: الحد الأقصى لوقت الانتظار لاستجابة من خادم حساب الضرائب؛
   </li>
@@ -1328,11 +1328,11 @@
       </li>
     </ul>
 </ol>
-<h2 id="155-dao-nuxt">15.5. <span style="color: #4f81bd">طبقات [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] لتطبيق [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]</span></h2>
+<h2 id="155-dao-nuxt">15.5. <span style="color: #4f81bd">طبقات [dao] لتطبيق [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]</span></h2>
 <p>كما ذكر أعلاه، ستكون بنية تطبيق [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] على النحو التالي:</p>
 <p><img src="images/10000000000004660000036A2523CCDB.png" width="338" height="262" style="width:8.939cm;height:6.937cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000004660000036A2523CCDB.png" /></p>
 <ul>
-  <li>في [1]، يقوم خادم [<bdi dir="ltr" class="odt-ltr-term">node.js</bdi>] بتسليم صفحات [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] إلى المتصفح [2]. طبقة [<bdi dir="ltr" class="odt-ltr-term">web</bdi>] [8] في الخادم هي التي تقوم بتسليم هذه الصفحات. لتسليم الصفحة، قد يكون الخادم قد طلب بيانات خارجية من خادم البيانات [3]. طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] [9] هي التي تقوم بإجراء طلبات <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> اللازمة؛
+  <li>في [1]، يقوم خادم [<bdi dir="ltr" class="odt-ltr-term">node.js</bdi>] بتسليم صفحات [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] إلى المتصفح [2]. طبقة [web] [8] في الخادم هي التي تقوم بتسليم هذه الصفحات. لتسليم الصفحة، قد يكون الخادم قد طلب بيانات خارجية من خادم البيانات [3]. طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] [9] هي التي تقوم بإجراء طلبات <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> اللازمة؛
   </li>
   <li>مع كل طلب صفحة إلى خادم [<bdi dir="ltr" class="odt-ltr-term">Node.js</bdi>] [1]، يتلقى المتصفح [2] تطبيق [<bdi dir="ltr" class="odt-ltr-term">Nuxt</bdi>] بالكامل، والذي يعمل بعد ذلك في وضع <bdi dir="ltr" class="odt-ltr-term">SPA.</bdi> تعرض كتلة [<bdi dir="ltr" class="odt-ltr-term">UI</bdi>] (واجهة المستخدم) [4] صفحات [<bdi dir="ltr" class="odt-ltr-term">Vue.js</bdi>] للمستخدم. قد تؤدي إجراءات المستخدم أو دورة حياة الصفحة إلى تشغيل طلبات للحصول على بيانات خارجية من خادم البيانات [3]. ثم تقوم طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] [5] بإجراء طلبات <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> اللازمة؛
   </li>
@@ -1559,7 +1559,7 @@
 </code></pre></div>
 
 <ul>
-  <li>تُرجع جميع الطرق في طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] الكائن المرسل من خادم البيانات [{<b><bdi dir="ltr" class="odt-ltr-term">action</bdi></b>: ‘<bdi dir="ltr" class="odt-ltr-term">xx</bdi>’, <b><bdi dir="ltr" class="odt-ltr-term">status</bdi></b>: <bdi dir="ltr" class="odt-ltr-term">nn</bdi>, <b><bdi dir="ltr" class="odt-ltr-term">response</bdi></b>: {...}] مع:
+  <li>تُرجع جميع الطرق في طبقة [dao] الكائن المرسل من خادم البيانات [{<b><bdi dir="ltr" class="odt-ltr-term">action</bdi></b>: ‘xx’, <b><bdi dir="ltr" class="odt-ltr-term">status</bdi></b>: nn, <b><bdi dir="ltr" class="odt-ltr-term">response</bdi></b>: {...}] مع:
     <ul>
       <li>[<bdi dir="ltr" class="odt-ltr-term">action</bdi>]: اسم الإجراء الذي نفذه خادم البيانات؛
       </li>
@@ -1597,11 +1597,11 @@
   </li>
   <li>السطر 5: اسم ملف تعريف ارتباط الجلسة الذي أرسله خادم البيانات المكتوب بلغة <bdi dir="ltr" class="odt-ltr-term">PHP</bdi>؛
   </li>
-  <li>السطر 6: ملف تعريف الارتباط الخاص بالجلسة الذي يتم تبادله بين طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] وخادم البيانات. يتم تهيئة هذا بواسطة الدالة [<bdi dir="ltr" class="odt-ltr-term">getRemoteData</bdi>] في الأسطر 67–113؛
+  <li>السطر 6: ملف تعريف الارتباط الخاص بالجلسة الذي يتم تبادله بين طبقة [dao] وخادم البيانات. يتم تهيئة هذا بواسطة الدالة [<bdi dir="ltr" class="odt-ltr-term">getRemoteData</bdi>] في الأسطر 67–113؛
   </li>
 </ul>
 
-<p>بالنسبة لملف تعريف الارتباط الخاص بالجلسة، نحتاج إلى النظر في طبقتين منفصلتين من [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>]:</p>
+<p>بالنسبة لملف تعريف الارتباط الخاص بالجلسة، نحتاج إلى النظر في طبقتين منفصلتين من [dao]:</p>
 <ul>
   <li>طبقة المتصفح؛
   </li>
@@ -1654,8 +1654,8 @@
   </li>
 </ul>
 
-<p>إدارة ملف تعريف ارتباط جلسة <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> أعلاه غير مناسبة لخادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]: حيث <strong>يتم إنشاء مثيل</strong> لطبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] الخاصة به <strong>مع كل طلب جديد يتم إرساله إلى خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]</strong>. تذكر أن طلب صفحة من خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] يؤدي فعليًا إلى إعادة تعيين تطبيق [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]. وبالتالي، عندما يقوم خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] بإرسال طلبه الأول إلى خادم البيانات، يتم تهيئة ملف تعريف ارتباط جلسة <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> لطبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>]، وتُفقد هذه القيمة أثناء طلب <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> التالي من نفس خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]، لأنه في غضون ذلك تم إعادة إنشاء طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] الخاصة به، وإعادة تنفيذ المنشئ، وإعادة تعيين ملف تعريف ارتباط جلسة <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> إلى سلسلة فارغة (السطر 6)؛</p>
-<p>أحد الحلول هو استخدام مُنشئ مختلف لطبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] في الخادم:</p>
+<p>إدارة ملف تعريف ارتباط جلسة <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> أعلاه غير مناسبة لخادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]: حيث <strong>يتم إنشاء مثيل</strong> لطبقة [dao] الخاصة به <strong>مع كل طلب جديد يتم إرساله إلى خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]</strong>. تذكر أن طلب صفحة من خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] يؤدي فعليًا إلى إعادة تعيين تطبيق [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]. وبالتالي، عندما يقوم خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] بإرسال طلبه الأول إلى خادم البيانات، يتم تهيئة ملف تعريف ارتباط جلسة <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> لطبقة [dao]، وتُفقد هذه القيمة أثناء طلب <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> التالي من نفس خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]، لأنه في غضون ذلك تم إعادة إنشاء طبقة [dao] الخاصة به، وإعادة تنفيذ المنشئ، وإعادة تعيين ملف تعريف ارتباط جلسة <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> إلى سلسلة فارغة (السطر 6)؛</p>
+<p>أحد الحلول هو استخدام مُنشئ مختلف لطبقة [dao] في الخادم:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content">// constructeur</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#0000ff">constructor</span>(axios, phpSessionCookie) {</span></span>
@@ -1673,7 +1673,7 @@
   </li>
 </ul>
 
-<p>كيف سيقدم خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] ملف تعريف ارتباط جلسة عمل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> هذا إلى مُنشئ طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] الخاصة به؟ سنقوم بتخزين ملف تعريف ارتباط جلسة عمل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> في ملف تعريف ارتباط جلسة عمل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] الذي يتم تبادله بين المتصفح وخادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]. وتتم العملية على النحو التالي:</p>
+<p>كيف سيقدم خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] ملف تعريف ارتباط جلسة عمل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> هذا إلى مُنشئ طبقة [dao] الخاصة به؟ سنقوم بتخزين ملف تعريف ارتباط جلسة عمل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> في ملف تعريف ارتباط جلسة عمل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] الذي يتم تبادله بين المتصفح وخادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]. وتتم العملية على النحو التالي:</p>
 <ol>
   <li>يتم تشغيل تطبيق [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]؛
   </li>
@@ -1764,7 +1764,7 @@
 </code></pre></div>
 
 <ul>
-  <li>الأسطر 30–43: نبحث عن ملف تعريف الارتباط [<bdi dir="ltr" class="odt-ltr-term">PHPSESSID</bdi>=<bdi dir="ltr" class="odt-ltr-term">xxx</bdi>]. إذا تم العثور عليه، يتم تخزينه في الفئة (السطر 36)؛
+  <li>الأسطر 30–43: نبحث عن ملف تعريف الارتباط [<bdi dir="ltr" class="odt-ltr-term">PHPSESSID</bdi>=xxx]. إذا تم العثور عليه، يتم تخزينه في الفئة (السطر 36)؛
   </li>
 </ul>
 
@@ -1871,9 +1871,9 @@
 </code></pre></div>
 
 <ul>
-  <li>يطلب خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] إجراءً من طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] الخاصة به عن طريق تزويد منشئه بملف تعريف ارتباط جلسة عمل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi>، إن وُجد؛
+  <li>يطلب خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] إجراءً من طبقة [dao] الخاصة به عن طريق تزويد منشئه بملف تعريف ارتباط جلسة عمل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi>، إن وُجد؛
   </li>
-  <li>بمجرد اكتمال الإجراء، يسترد خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] ملف تعريف ارتباط جلسة عمل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> المخزن بواسطة طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] باستخدام طريقة [<span style="color: #000000"><bdi dir="ltr" class="odt-ltr-term">getPhpSessionCookie</bdi></span>] السابقة. قد يكون ملف تعريف الارتباط هذا هو نفسه الملف السابق أو ملفًا مختلفًا. تحدث الحالة الأخيرة في حالتين:
+  <li>بمجرد اكتمال الإجراء، يسترد خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] ملف تعريف ارتباط جلسة عمل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> المخزن بواسطة طبقة [dao] باستخدام طريقة [<span style="color: #000000"><bdi dir="ltr" class="odt-ltr-term">getPhpSessionCookie</bdi></span>] السابقة. قد يكون ملف تعريف الارتباط هذا هو نفسه الملف السابق أو ملفًا مختلفًا. تحدث الحالة الأخيرة في حالتين:
     <ul>
       <li>عند تنفيذ طريقة [<bdi dir="ltr" class="odt-ltr-term">initSession</bdi>] (لم يكن هناك ملف تعريف ارتباط جلسة عمل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> من قبل)؛
       </li>
@@ -1884,7 +1884,7 @@
 </ul>
 
 <p>لاحظ ميزة خاصة تتعلق بملف تعريف ارتباط جلسة عمل <bdi dir="ltr" class="odt-ltr-term">PHP.</bdi> لا يتلقى خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] دائمًا ملف تعريف الارتباط هذا من خادم <bdi dir="ltr" class="odt-ltr-term">PHP.</bdi> في الواقع، يرسله خادم <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> مرة واحدة فقط. بعد ذلك، لا يرسله مرة أخرى. عند النظر إلى كود [<bdi dir="ltr" class="odt-ltr-term">getRemoteData</bdi>] و [<bdi dir="ltr" class="odt-ltr-term">getPhpSessionCookie</bdi>]، يمكننا أن نرى أنه عندما لا يرسل خادم <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> ملف تعريف ارتباط الجلسة، فإن دالة [<bdi dir="ltr" class="odt-ltr-term">getPhpSessionCookie</bdi>] تُرجع ملف تعريف ارتباط جلسة <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> المقدم إلى المُنشئ. هكذا يرسل الخادم دائمًا إلى خادم <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> آخر ملف تعريف ارتباط جلسة <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> أرسله خادم <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> إليه.</p>
-<h3 id="1552-dao-nuxt">15.5.2. <span style="color: #4f81bd">طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] لعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]</span></h3>
+<h3 id="1552-dao-nuxt">15.5.2. <span style="color: #4f81bd">طبقة [dao] لعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]</span></h3>
 <p><img src="images/100000000000012F000000DF1A53B038.png" width="121" height="89" style="width:3.21cm;height:2.362cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000012F000000DF1A53B038.png" /></p>
 <p>بالنسبة لعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] الذي يعمل في متصفح، نستخدم الكود من فئة [<bdi dir="ltr" class="odt-ltr-term">Dao</bdi>] في الوثيقة <a href="https://tahe.developpez.com/tutoriels-cours/vuejs"><u><span style="color: #0563c1">|مقدمة إلى </span></u></a><a href="https://tahe.developpez.com/tutoriels-cours/vuejs"><u><span style="color: #0563c1">إطار عمل</span></u></a><a href="https://tahe.developpez.com/tutoriels-cours/vuejs"><u><span style="color: #0563c1"> <bdi dir="ltr" class="odt-ltr-term">VUE.JS</bdi> </span></u></a><a href="https://tahe.developpez.com/tutoriels-cours/vuejs"><u><span style="color: #0563c1">من خلال</span></u></a> أمثلة|:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
@@ -1976,8 +1976,8 @@
 <span class="odt-code-line"><span class="odt-code-line-content">export<span style="color:#000000"> </span>default<span style="color:#000000"> Dao;</span></span></span>
 </code></pre></div>
 
-<p>يختلف هذا الكود عن طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] في خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] من حيث أنه لا يدير ملف تعريف ارتباط جلسة <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> مع خادم حساب الضرائب: فالمتصفح هو الذي يتولى ذلك.</p>
-<p>سنقوم، كما فعلنا مع طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] في خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]، بإضافة طريقة [<bdi dir="ltr" class="odt-ltr-term">finSession</bdi>]:</p>
+<p>يختلف هذا الكود عن طبقة [dao] في خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] من حيث أنه لا يدير ملف تعريف ارتباط جلسة <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> مع خادم حساب الضرائب: فالمتصفح هو الذي يتولى ذلك.</p>
+<p>سنقوم، كما فعلنا مع طبقة [dao] في خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]، بإضافة طريقة [<bdi dir="ltr" class="odt-ltr-term">finSession</bdi>]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
 <span class="odt-code-line"><span class="odt-code-line-content">// end of tax calculation session</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#0000ff">async</span> finSession() {</span></span>
@@ -2060,7 +2060,7 @@
 </code></pre></div>
 
 <p>احتفظنا فقط بالكود الموجود في [<bdi dir="ltr" class="odt-ltr-term">getRemoteData</bdi>] الذي يعالج استجابة خادم <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> لاسترداد ملف تعريف ارتباط جلسة عمل <bdi dir="ltr" class="odt-ltr-term">PHP.</bdi> لم نحتفظ بالكود الذي تضمن ملف تعريف ارتباط جلسة عمل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> في الطلب الموجه إلى خادم <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> لأن المتصفح الذي يستضيف عميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] يتولى ذلك.</p>
-<p>بمجرد حصول عميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] على ملف تعريف ارتباط جلسة عمل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi>، يجب وضعه في جلسة عمل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] حتى يتمكن خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] من استخدامه. لا تتولى طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] معالجة ذلك، ولكنها توفر الوصول عبر طريقة إلى ملف تعريف ارتباط جلسة عمل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> الذي قامت بتخزينه:</p>
+<p>بمجرد حصول عميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] على ملف تعريف ارتباط جلسة عمل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi>، يجب وضعه في جلسة عمل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] حتى يتمكن خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] من استخدامه. لا تتولى طبقة [dao] معالجة ذلك، ولكنها توفر الوصول عبر طريقة إلى ملف تعريف ارتباط جلسة عمل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> الذي قامت بتخزينه:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content">// accès au cookie de la session PHP</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  getPhpSessionCookie() {</span></span>
@@ -2070,7 +2070,7 @@
 
 <p>لا تعرض الدالة [<span style="color: #000000"><bdi dir="ltr" class="odt-ltr-term">getPhpSessionCookie</bdi></span>] دائمًا ملف تعريف ارتباط جلسة عمل صالحًا:</p>
 <ul>
-  <li>من المهم أن نتذكر هنا أن طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] لعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] هي طبقة ثابتة. يتم إنشاء مثيل لها مرة واحدة ثم تبقى في الذاكرة؛
+  <li>من المهم أن نتذكر هنا أن طبقة [dao] لعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] هي طبقة ثابتة. يتم إنشاء مثيل لها مرة واحدة ثم تبقى في الذاكرة؛
   </li>
   <li>طالما أن خادم <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> لا يرسل ملف تعريف ارتباط جلسة عمل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> إلى عميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]، فإن دالة [<span style="color: #000000"><bdi dir="ltr" class="odt-ltr-term">getPhpSessionCookie</bdi></span>] في عميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] تُرجع قيمة [<bdi dir="ltr" class="odt-ltr-term">undefined</bdi>]؛
   </li>
@@ -2078,7 +2078,7 @@
   </li>
 </ul>
 
-<p>تختلف طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] لعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] عن طبقة خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] في جانب واحد فقط: فهي لا ترسل ملف تعريف ارتباط جلسة عمل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> بنفسها، حيث يتولى المتصفح هذه المهمة. ومع ذلك، اخترنا الحفاظ على طبقتين [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] منفصلتين لأن الأسباب الكامنة وراء تطبيقهما تختلف.</p>
+<p>تختلف طبقة [dao] لعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] عن طبقة خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] في جانب واحد فقط: فهي لا ترسل ملف تعريف ارتباط جلسة عمل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> بنفسها، حيث يتولى المتصفح هذه المهمة. ومع ذلك، اخترنا الحفاظ على طبقتين [dao] منفصلتين لأن الأسباب الكامنة وراء تطبيقهما تختلف.</p>
 <h2 id="156-nuxt">15.6. <span style="color: #4f81bd">جلسة [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]</span></h2>
 <p><img src="images/100000000000015B000000550BF91A25.png" width="173" height="42" style="width:4.59cm;height:1.124cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000015B000000550BF91A25.png" /></p>
 <p>سيتم تغليف جلسة [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] (بين العميل وخادم <bdi dir="ltr" class="odt-ltr-term">Nuxt</bdi>) في كائن [<bdi dir="ltr" class="odt-ltr-term">session</bdi>] التالي:</p>
@@ -2201,9 +2201,9 @@
   <li>السطر 13: نُرجع جلسة [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] المستوردة في السطر 4 عبر الدالة المُدرجة [$<bdi dir="ltr" class="odt-ltr-term">session</bdi>]؛
   </li>
 </ul>
-<h2 id="158-dao">15.8. <span style="color: #4f81bd">المكونات الإضافية لطبقات [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>]</span></h2>
+<h2 id="158-dao">15.8. <span style="color: #4f81bd">المكونات الإضافية لطبقات [dao]</span></h2>
 <p><img src="images/100000000000017A0000012408FEBC3E.png" width="151" height="117" style="width:4.001cm;height:3.09cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000017A0000012408FEBC3E.png" /></p>
-<h3 id="1581-dao-nuxt">15.8.1. <span style="color: #4f81bd">ملحق طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] لعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]</span></h3>
+<h3 id="1581-dao-nuxt">15.8.1. <span style="color: #4f81bd">ملحق طبقة [dao] لعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]</span></h3>
 <p>النص البرمجي [<bdi dir="ltr" class="odt-ltr-term">client/plgDao</bdi>] هو كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
 <span class="odt-code-line"><span class="odt-code-line-content">/* eslint-disable no-console */</span></span>
@@ -2224,9 +2224,9 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 3: يتم استيراد طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] لعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]؛
+  <li>السطر 3: يتم استيراد طبقة [dao] لعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]؛
   </li>
-  <li>الأسطر 6-8: نقوم بتكوين كائن [<bdi dir="ltr" class="odt-ltr-term">context.</bdi>$<bdi dir="ltr" class="odt-ltr-term">axios</bdi>]، الذي سيقوم بإجراء طلبات <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> لطبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] لعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] باستخدام المعلومات الموجودة في ملف [<bdi dir="ltr" class="odt-ltr-term">nuxt.config</bdi>]:
+  <li>الأسطر 6-8: نقوم بتكوين كائن [<bdi dir="ltr" class="odt-ltr-term">context.</bdi>$<bdi dir="ltr" class="odt-ltr-term">axios</bdi>]، الذي سيقوم بإجراء طلبات <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> لطبقة [dao] لعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] باستخدام المعلومات الموجودة في ملف [<bdi dir="ltr" class="odt-ltr-term">nuxt.config</bdi>]:
   </li>
 </ul>
 
@@ -2243,20 +2243,20 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 10: يتم إنشاء مثيل لطبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] الخاصة بعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]؛
+  <li>السطر 10: يتم إنشاء مثيل لطبقة [dao] الخاصة بعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]؛
   </li>
-  <li>السطر 12: يتم إدخال الدالة [$<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] في سياق العميل وصفحاته. توفر هذه الدالة الوصول إلى طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] من السطر 10؛
+  <li>السطر 12: يتم إدخال الدالة [$dao] في سياق العميل وصفحاته. توفر هذه الدالة الوصول إلى طبقة [dao] من السطر 10؛
   </li>
 </ul>
 
-<p>لذا، للوصول إلى طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] لعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] أثناء تشغيله، نكتب:</p>
+<p>لذا، للوصول إلى طبقة [dao] لعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] أثناء تشغيله، نكتب:</p>
 <ul>
-  <li>[<b><bdi dir="ltr" class="odt-ltr-term">context.app.</bdi>$<bdi dir="ltr" class="odt-ltr-term">dao</bdi>()</b>] حيث يكون السياق معروفًا؛
+  <li>[<b><bdi dir="ltr" class="odt-ltr-term">context.app.</bdi>$dao()</b>] حيث يكون السياق معروفًا؛
   </li>
-  <li>[<b><bdi dir="ltr" class="odt-ltr-term">this.</bdi>$<bdi dir="ltr" class="odt-ltr-term">dao</bdi>()</b>] في صفحة [<bdi dir="ltr" class="odt-ltr-term">Vue.js</bdi>]؛
+  <li>[<b><bdi dir="ltr" class="odt-ltr-term">this.</bdi>$dao()</b>] في صفحة [<bdi dir="ltr" class="odt-ltr-term">Vue.js</bdi>]؛
   </li>
 </ul>
-<h3 id="1582-dao-nuxt">15.8.2. <span style="color: #4f81bd"><strong>المكوّن الإضافي لطبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>]</strong> <em>لخادم</em> <strong>[<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]</strong></span></h3>
+<h3 id="1582-dao-nuxt">15.8.2. <span style="color: #4f81bd"><strong>المكوّن الإضافي لطبقة [dao]</strong> <em>لخادم</em> <strong>[<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]</strong></span></h3>
 <p>النص البرمجي [<bdi dir="ltr" class="odt-ltr-term">server/plgDao</bdi>] هو كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
 <span class="odt-code-line"><span class="odt-code-line-content">/* eslint-disable no-console */</span></span>
@@ -2280,9 +2280,9 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 3: يتم استيراد طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] من خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]؛
+  <li>السطر 3: يتم استيراد طبقة [dao] من خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]؛
   </li>
-  <li>السطران 6-7: يتم تكوين الكائن [<bdi dir="ltr" class="odt-ltr-term">context.</bdi>$<bdi dir="ltr" class="odt-ltr-term">axios</bdi>] لإجراء طلبات <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> لطبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] لخادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] باستخدام المعلومات الموجودة في ملف [<bdi dir="ltr" class="odt-ltr-term">nuxt.config</bdi>]:
+  <li>السطران 6-7: يتم تكوين الكائن [<bdi dir="ltr" class="odt-ltr-term">context.</bdi>$<bdi dir="ltr" class="odt-ltr-term">axios</bdi>] لإجراء طلبات <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> لطبقة [dao] لخادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] باستخدام المعلومات الموجودة في ملف [<bdi dir="ltr" class="odt-ltr-term">nuxt.config</bdi>]:
   </li>
 </ul>
 
@@ -2301,19 +2301,19 @@
 <ul>
   <li>السطر 9: استرداد مخزن التطبيق [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]؛
   </li>
-  <li>السطر 10: إذا كان المخزن موجودًا، فإننا نسترد ملف تعريف ارتباط جلسة عمل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> لأننا نحتاجه لإنشاء مثيل لطبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] لخادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]؛
+  <li>السطر 10: إذا كان المخزن موجودًا، فإننا نسترد ملف تعريف ارتباط جلسة عمل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> لأننا نحتاجه لإنشاء مثيل لطبقة [dao] لخادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]؛
   </li>
-  <li>السطر 13: إنشاء مثيل لطبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] لخادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]؛
+  <li>السطر 13: إنشاء مثيل لطبقة [dao] لخادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]؛
   </li>
-  <li>السطر 15: يتم إدخال الدالة [$<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] في سياق وصفحات خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]. توفر هذه الدالة الوصول إلى طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] من السطر 13؛
+  <li>السطر 15: يتم إدخال الدالة [$dao] في سياق وصفحات خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]. توفر هذه الدالة الوصول إلى طبقة [dao] من السطر 13؛
   </li>
 </ul>
 
-<p>لذا، للوصول إلى طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] لخادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] أثناء تشغيله، نكتب:</p>
+<p>لذا، للوصول إلى طبقة [dao] لخادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] أثناء تشغيله، نكتب:</p>
 <ul>
-  <li>[<b><bdi dir="ltr" class="odt-ltr-term">context.app.</bdi>$<bdi dir="ltr" class="odt-ltr-term">dao</bdi>()</b>] حيث يكون السياق معروفًا؛
+  <li>[<b><bdi dir="ltr" class="odt-ltr-term">context.app.</bdi>$dao()</b>] حيث يكون السياق معروفًا؛
   </li>
-  <li>[<b><bdi dir="ltr" class="odt-ltr-term">this.</bdi>$<bdi dir="ltr" class="odt-ltr-term">dao</bdi>()</b>] في صفحة [<bdi dir="ltr" class="odt-ltr-term">Vue.js</bdi>]؛
+  <li>[<b><bdi dir="ltr" class="odt-ltr-term">this.</bdi>$dao()</b>] في صفحة [<bdi dir="ltr" class="odt-ltr-term">Vue.js</bdi>]؛
   </li>
 </ul>
 
@@ -2753,9 +2753,9 @@
   </li>
   <li>السطر 25: نعلم أنه عند طلب الصفحة مباشرة من خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]، يتم تنفيذ دالة [<bdi dir="ltr" class="odt-ltr-term">asyncData</bdi>] بواسطة الخادم فقط وليس بواسطة عميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]، الذي يعمل بمجرد استلام المتصفح للاستجابة من خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]؛
   </li>
-  <li>السطر 30: نسترد طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] من سياق خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]؛
+  <li>السطر 30: نسترد طبقة [dao] من سياق خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]؛
   </li>
-  <li>السطر 35: إذا لم يكن الخادم قد أرسل طلبًا إلى خادم حساب الضرائب بعد، فإنه يتلقى ملف تعريف ارتباط جلسة <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> الأول؛ وإلا، فإنه يتلقى آخر ملف تعريف ارتباط جلسة <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> تلقّاه (انظر كود طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] لخادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] في القسم <a href="../../../../../../../st-2020/st-2020/cours/nuxtjs/masters/02/chap-15.docx#nuxt12_nuxtserver_dao"><u><span style="color: #0563c1">المرتبط</span></u></a>)؛
+  <li>السطر 35: إذا لم يكن الخادم قد أرسل طلبًا إلى خادم حساب الضرائب بعد، فإنه يتلقى ملف تعريف ارتباط جلسة <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> الأول؛ وإلا، فإنه يتلقى آخر ملف تعريف ارتباط جلسة <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> تلقّاه (انظر كود طبقة [dao] لخادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] في القسم <a href="../../../../../../../st-2020/st-2020/cours/nuxtjs/masters/02/chap-15.docx#nuxt12_nuxtserver_dao"><u><span style="color: #0563c1">المرتبط</span></u></a>)؛
   </li>
   <li>السطر 37: يتم تخزين ملف تعريف ارتباط جلسة <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> هذا في المخزن؛
   </li>
@@ -2912,7 +2912,7 @@
   </li>
   <li>الأسطر 28–33: لا يقوم الخادم بتنفيذ هذه الأسطر المخصصة للعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]؛
   </li>
-  <li>السطر 36: يتم استرداد طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] من خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]؛
+  <li>السطر 36: يتم استرداد طبقة [dao] من خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]؛
   </li>
   <li>السطر 37: نقوم بالمصادقة مع خادم حساب الضرائب باستخدام بيانات اعتماد الاختبار [<bdi dir="ltr" class="odt-ltr-term">admin</bdi>, <bdi dir="ltr" class="odt-ltr-term">admin</bdi>]، وهي البيانات الوحيدة التي يقبلها خادم حساب الضرائب؛
   </li>
@@ -3066,7 +3066,7 @@
 <ul>
   <li>الأسطر 28-33: يطلب عميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] عرض رسالة التحميل ومسح أي رسالة خطأ تم عرضها مسبقًا؛
   </li>
-  <li>السطر 36: يتم الآن استرداد طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] لعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] هنا؛
+  <li>السطر 36: يتم الآن استرداد طبقة [dao] لعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] هنا؛
   </li>
   <li>الأسطر 60-63: يطلب عميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] إزالة رسالة التحميل؛
   </li>
@@ -3269,7 +3269,7 @@
 <p>يشبه هذا الكود إلى حد كبير الكود الموجود في الصفحات السابقة، والتفسيرات هي نفسها. هناك نقطة واحدة فقط يجب ملاحظتها: تؤدي العملية غير المتزامنة في السطر 38 إلى قيام خادم حساب الضرائب بإرسال ملف تعريف ارتباط جلسة عمل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> جديد. تختلف تعليمات التعامل مع ملف تعريف الارتباط هذا اعتمادًا على ما إذا كان الخادم أو عميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] هو الذي ينفذ هذا الكود.</p>
 <p>لنبدأ بخادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]:</p>
 <ul>
-  <li>السطر 37: هذه هي طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] لخادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] التي يتم إنشاء مثيل لها. دعونا نستذكر كود منشئها:
+  <li>السطر 37: هذه هي طبقة [dao] لخادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] التي يتم إنشاء مثيل لها. دعونا نستذكر كود منشئها:
   </li>
 </ul>
 
@@ -3297,7 +3297,7 @@
   </li>
 </ul>
 
-<p>حقيقة أن ملف تعريف الارتباط <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> موجود في جلسة [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] كافية للخادم، لأن ذلك هو المكان الذي ستسترده منه طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] الخاصة به. في المكون الإضافي [<bdi dir="ltr" class="odt-ltr-term">server/plgDao</bdi>] الذي يقوم بتهيئة طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] الخاصة بالخادم، كتبنا:</p>
+<p>حقيقة أن ملف تعريف الارتباط <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> موجود في جلسة [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] كافية للخادم، لأن ذلك هو المكان الذي ستسترده منه طبقة [dao] الخاصة به. في المكون الإضافي [<bdi dir="ltr" class="odt-ltr-term">server/plgDao</bdi>] الذي يقوم بتهيئة طبقة [dao] الخاصة بالخادم، كتبنا:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
 <span class="odt-code-line"><span class="odt-code-line-content">/* eslint-disable no-console */</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">// on crée un point d&#x27;accès à la couche [Dao]</span></span>
@@ -3320,7 +3320,7 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 13: يتم إنشاء مثيل لطبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] لخادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] باستخدام ملف تعريف ارتباط جلسة العمل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> المأخوذ من جلسة عمل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]، السطور 9–10؛
+  <li>السطر 13: يتم إنشاء مثيل لطبقة [dao] لخادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] باستخدام ملف تعريف ارتباط جلسة العمل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> المأخوذ من جلسة عمل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]، السطور 9–10؛
   </li>
 </ul>
 
@@ -3445,11 +3445,11 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 3: هذه هي طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] لعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] التي يتم استردادها هنا؛
+  <li>السطر 3: هذه هي طبقة [dao] لعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] التي يتم استردادها هنا؛
   </li>
-  <li>السطر 18: يتم تخزين ملف تعريف ارتباط جلسة عمل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> الذي تم استرداده بواسطة طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] لعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]، ووضعه في المخزن (السطر 20)، ثم حفظه في جلسة عمل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] (السطران 22-23)؛
+  <li>السطر 18: يتم تخزين ملف تعريف ارتباط جلسة عمل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> الذي تم استرداده بواسطة طبقة [dao] لعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]، ووضعه في المخزن (السطر 20)، ثم حفظه في جلسة عمل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] (السطران 22-23)؛
   </li>
-  <li>منذ ذلك الحين، يعمل كل شيء على ما يرام لأننا نعلم أن طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] لخادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] ستسترد ملف تعريف ارتباط جلسة عمل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> من جلسة عمل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]؛
+  <li>منذ ذلك الحين، يعمل كل شيء على ما يرام لأننا نعلم أن طبقة [dao] لخادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] ستسترد ملف تعريف ارتباط جلسة عمل <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> من جلسة عمل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]؛
   </li>
 </ul>
 <h2 id="1519">15.19. <span style="color: #4f81bd">التنفيذ</span></h2>

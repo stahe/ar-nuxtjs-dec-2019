@@ -899,14 +899,14 @@
 
 
 <h1 id="4-nuxt-01">4. <span style="color: #365f91">المثال [<bdi dir="ltr" class="odt-ltr-term">nuxt-01</bdi>]: التوجيه والتنقل</span></h1>
-<p>سنقوم بإنشاء سلسلة من الأمثلة البسيطة لاكتشاف كيفية عمل تطبيق [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] تدريجيًا. سنبدأ بنقل تطبيق [<bdi dir="ltr" class="odt-ltr-term">vuejs-11</bdi>] من الوثيقة <a href="https://tahe.developpez.com/tutoriels-cours/vuejs"><u><span style="color: #0563c1">|مقدمة إلى </span></u></a><a href="https://tahe.developpez.com/tutoriels-cours/vuejs"><u><span style="color: #0563c1">إطار عمل</span></u></a><a href="https://tahe.developpez.com/tutoriels-cours/vuejs"><u><span style="color: #0563c1"> <bdi dir="ltr" class="odt-ltr-term">VUE.JS</bdi> </span></u></a><a href="https://tahe.developpez.com/tutoriels-cours/vuejs"><u><span style="color: #0563c1">من خلال</span></u></a> أمثلة|، لاكتشاف أولاً ما يميز تنظيم كود تطبيق [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] عن تطبيق [<bdi dir="ltr" class="odt-ltr-term">vue</bdi>].</p>
+<p>سنقوم بإنشاء سلسلة من الأمثلة البسيطة لاكتشاف كيفية عمل تطبيق [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] تدريجيًا. سنبدأ بنقل تطبيق [<bdi dir="ltr" class="odt-ltr-term">vuejs-11</bdi>] من الوثيقة <a href="https://tahe.developpez.com/tutoriels-cours/vuejs"><u><span style="color: #0563c1">|مقدمة إلى </span></u></a><a href="https://tahe.developpez.com/tutoriels-cours/vuejs"><u><span style="color: #0563c1">إطار عمل</span></u></a><a href="https://tahe.developpez.com/tutoriels-cours/vuejs"><u><span style="color: #0563c1"> <bdi dir="ltr" class="odt-ltr-term">VUE.JS</bdi> </span></u></a><a href="https://tahe.developpez.com/tutoriels-cours/vuejs"><u><span style="color: #0563c1">من خلال</span></u></a> أمثلة|، لاكتشاف أولاً ما يميز تنظيم كود تطبيق [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] عن تطبيق [vue].</p>
 <h2 id="41">4.1. <span style="color: #4f81bd">هيكل دليل المشروع</span></h2>
 <p>كان مشروع [<bdi dir="ltr" class="odt-ltr-term">vuejs-11</bdi>] مشروعًا يتضمن التنقل بين العروض:</p>
 <p><img src="images/10000000000009DA000002ED622669F6.png" width="630" height="187" style="width:16.679cm;height:4.953cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000009DA000002ED622669F6.png" /></p>
 <p>كانت بنية دليل الكود المصدري لمشروع [<bdi dir="ltr" class="odt-ltr-term">vuejs-11</bdi>] كما يلي:</p>
 <p><img src="images/10000000000002AE0000015510494F9F.png" width="343" height="171" style="width:9.081cm;height:4.514cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002AE0000015510494F9F.png" /></p>
 <ul>
-  <li>كان [<bdi dir="ltr" class="odt-ltr-term">main.js</bdi>] هو البرنامج النصي الذي يتم تنفيذه عند بدء تشغيل تطبيق [<bdi dir="ltr" class="odt-ltr-term">vue</bdi>]؛
+  <li>كان [<bdi dir="ltr" class="odt-ltr-term">main.js</bdi>] هو البرنامج النصي الذي يتم تنفيذه عند بدء تشغيل تطبيق [vue]؛
   </li>
   <li>حدد [<bdi dir="ltr" class="odt-ltr-term">router.js</bdi>] قواعد التوجيه؛
   </li>
@@ -941,7 +941,7 @@
 <a id="__codelineno-0-2" name="__codelineno-0-2"></a>{ name :’page1’, ‘path’ :’/page1’}
 <a id="__codelineno-0-3" name="__codelineno-0-3"></a>{ name :’page2’, ‘path’ :’/page2’}
 </code></pre></div></td></tr></table></div>
-<p>ونتيجة لذلك، يصبح ملف [<bdi dir="ltr" class="odt-ltr-term">router.js</bdi>] المستخدم في مشروع [<bdi dir="ltr" class="odt-ltr-term">vue</bdi>] غير ضروري في مشروع [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>].</p>
+<p>ونتيجة لذلك، يصبح ملف [<bdi dir="ltr" class="odt-ltr-term">router.js</bdi>] المستخدم في مشروع [vue] غير ضروري في مشروع [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>].</p>
 <p><a id="nuxt01-config"></a>سيكون ملف التكوين [<bdi dir="ltr" class="odt-ltr-term">nuxt.config.js</bdi>] كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
 <span class="odt-code-line"><span class="odt-code-line-content">export<span style="color:#000000"> </span>default<span style="color:#000000"> {</span></span></span>
@@ -1023,9 +1023,9 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 62: حدد المجلد الذي يحتوي على كود مصدر المشروع [<bdi dir="ltr" class="odt-ltr-term">dvp</bdi>]؛
+  <li>السطر 62: حدد المجلد الذي يحتوي على كود مصدر المشروع [dvp]؛
   </li>
-  <li>السطر 66: حدد عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الجذر لتطبيق [<bdi dir="ltr" class="odt-ltr-term">dvp</bdi>] (يمكنك إدخال ما تريد)؛
+  <li>السطر 66: حدد عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الجذر لتطبيق [dvp] (يمكنك إدخال ما تريد)؛
   </li>
   <li>السطر 43: لاحظ أن مكتبة [<bdi dir="ltr" class="odt-ltr-term">bootstrap-vue</bdi>] مشار إليها في التكوين؛
   </li>
@@ -1165,7 +1165,7 @@
 
 <p>يعرض هذا المكون ثلاثة روابط تنقل:</p>
 <p><img src="images/100000000000028A0000012120CA623E.png" width="325" height="145" style="width:8.601cm;height:3.824cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000028A0000012120CA623E.png" /></p>
-<p>لتحديد القيم التي يجب تعيينها لسمات [<bdi dir="ltr" class="odt-ltr-term">to</bdi>] في الأسطر 4 و7 و10، انظر إلى مجلد [<bdi dir="ltr" class="odt-ltr-term">pages</bdi>] [2]:</p>
+<p>لتحديد القيم التي يجب تعيينها لسمات [to] في الأسطر 4 و7 و10، انظر إلى مجلد [<bdi dir="ltr" class="odt-ltr-term">pages</bdi>] [2]:</p>
 <ul>
   <li>ستحتوي صفحة [<bdi dir="ltr" class="odt-ltr-term">index</bdi>] على عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [/] ؛
   </li>
@@ -1279,14 +1279,14 @@
   </li>
 </ul>
 <h2 id="46-nuxtconfigjs">4.6. <span style="color: #4f81bd">ملف [<bdi dir="ltr" class="odt-ltr-term">nuxt.config.js</bdi>]</span></h2>
-<p>يتحكم هذا الملف في تنفيذ مشروع [<bdi dir="ltr" class="odt-ltr-term">dvp</bdi>]. وقد تم وصفه في الصفحة<a href="#nuxt01-config"><u><span style="color: #0563c1"> 33</span></u></a>.</p>
+<p>يتحكم هذا الملف في تنفيذ مشروع [dvp]. وقد تم وصفه في الصفحة<a href="#nuxt01-config"><u><span style="color: #0563c1"> 33</span></u></a>.</p>
 <h2 id="47">4.7. <span style="color: #4f81bd">تشغيل المشروع</span></h2>
 <p>نقوم بتشغيل المشروع:</p>
 <p><img src="images/1000000000000307000000E286F6CC26.png" width="310" height="90" style="width:8.2cm;height:2.392cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000307000000E286F6CC26.png" /></p>
 <p>الصفحة المعروضة هي كما يلي:</p>
 <p><img src="images/10000000000006D2000002CC1F192FC4.png" width="611" height="251" style="width:16.17cm;height:6.63cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000006D2000002CC1F192FC4.png" /></p>
-<p>بمجرد تحميله في المتصفح، يصبح تطبيق [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] تطبيق [<bdi dir="ltr" class="odt-ltr-term">vue</bdi>] قياسي. ولذلك لن نناقش سلوك تطبيق [<bdi dir="ltr" class="odt-ltr-term">nuxt-01</bdi>] من جانب العميل. فقد تمت تغطية هذا الموضوع في مشروع [<bdi dir="ltr" class="odt-ltr-term">vuejs-11</bdi>] في الوثيقة <a href="https://tahe.developpez.com/tutoriels-cours/vuejs"><u><span style="color: #0563c1">|مقدمة إلى </span></u></a><a href="https://tahe.developpez.com/tutoriels-cours/vuejs"><u><span style="color: #0563c1">إطار عمل</span></u></a><a href="https://tahe.developpez.com/tutoriels-cours/vuejs"><u><span style="color: #0563c1"> <bdi dir="ltr" class="odt-ltr-term">VUE.JS</bdi> </span></u></a><a href="https://tahe.developpez.com/tutoriels-cours/vuejs"><u><span style="color: #0563c1">من خلال</span></u></a> الأمثلة|.</p>
-<p>يختلف تطبيق [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] عن تطبيق [<bdi dir="ltr" class="odt-ltr-term">vue</bdi>] في نقطتين فقط:</p>
+<p>بمجرد تحميله في المتصفح، يصبح تطبيق [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] تطبيق [vue] قياسي. ولذلك لن نناقش سلوك تطبيق [<bdi dir="ltr" class="odt-ltr-term">nuxt-01</bdi>] من جانب العميل. فقد تمت تغطية هذا الموضوع في مشروع [<bdi dir="ltr" class="odt-ltr-term">vuejs-11</bdi>] في الوثيقة <a href="https://tahe.developpez.com/tutoriels-cours/vuejs"><u><span style="color: #0563c1">|مقدمة إلى </span></u></a><a href="https://tahe.developpez.com/tutoriels-cours/vuejs"><u><span style="color: #0563c1">إطار عمل</span></u></a><a href="https://tahe.developpez.com/tutoriels-cours/vuejs"><u><span style="color: #0563c1"> <bdi dir="ltr" class="odt-ltr-term">VUE.JS</bdi> </span></u></a><a href="https://tahe.developpez.com/tutoriels-cours/vuejs"><u><span style="color: #0563c1">من خلال</span></u></a> الأمثلة|.</p>
+<p>يختلف تطبيق [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] عن تطبيق [vue] في نقطتين فقط:</p>
 <ul>
   <li>البدء الأولي للتطبيق، الذي يعرض الصفحة الرئيسية؛
   </li>

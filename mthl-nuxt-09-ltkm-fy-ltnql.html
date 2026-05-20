@@ -858,10 +858,10 @@
 <p><span style="color: #000000">يستخدم المثال [<bdi dir="ltr" class="odt-ltr-term">nuxt-09</bdi>] برنامج وسيط للتحكم في التنقل على العميل. بالإضافة إلى ذلك، تمت إضافة عرض جديد للحالات التي يطلب فيها المستخدم عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> من الخادم غير موجود في التطبيق.</span></p>
 <p><span style="color: #000000">يتم إنشاء المثال [<bdi dir="ltr" class="odt-ltr-term">nuxt-09</bdi>] مبدئيًا عن طريق نسخ المثال [<bdi dir="ltr" class="odt-ltr-term">nuxt-01</bdi>]:</span></p>
 <p><img src="images/10000000000001A0000001D7251FD4A6.png" width="166" height="188" style="width:4.399cm;height:4.981cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001A0000001D7251FD4A6.png" /></p>
-<h2 id="121-_vue">12.1. <span style="color: #4f81bd">الصفحة [_.<bdi dir="ltr" class="odt-ltr-term">vue</bdi>]</span></h2>
-<p><span style="color: #000000">ذكرنا أن مسارات التطبيق يتم إنشاؤها من محتويات مجلد [<bdi dir="ltr" class="odt-ltr-term">pages</bdi>]. هنا، أضفنا صفحة [_.<bdi dir="ltr" class="odt-ltr-term">vue</bdi>] إلى هذا المجلد. يتم عرض هذه الصفحة المحددة كلما تم توجيه التطبيق إلى صفحة غير موجودة. في مثالنا هنا، لا يمكن أن يحدث هذا بالنسبة للعميل. ولكنه يمكن أن يحدث بالنسبة للخادم إذا طُلب منه، على سبيل المثال، عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [</span><strong><span style="color: #000000">/<bdi dir="ltr" class="odt-ltr-term">nuxt-09/abcd</bdi></span></strong><span style="color: #000000">]. ونظرًا لأن صفحة [<bdi dir="ltr" class="odt-ltr-term">abcd</bdi>] غير موجودة، فسيتم عرض صفحة [_.<bdi dir="ltr" class="odt-ltr-term">vue</bdi>]. وهنا، سيبدو الأمر كما يلي:</span></p>
+<h2 id="121-_vue">12.1. <span style="color: #4f81bd">الصفحة [_.vue]</span></h2>
+<p><span style="color: #000000">ذكرنا أن مسارات التطبيق يتم إنشاؤها من محتويات مجلد [<bdi dir="ltr" class="odt-ltr-term">pages</bdi>]. هنا، أضفنا صفحة [_.vue] إلى هذا المجلد. يتم عرض هذه الصفحة المحددة كلما تم توجيه التطبيق إلى صفحة غير موجودة. في مثالنا هنا، لا يمكن أن يحدث هذا بالنسبة للعميل. ولكنه يمكن أن يحدث بالنسبة للخادم إذا طُلب منه، على سبيل المثال، عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [</span><strong><span style="color: #000000">/<bdi dir="ltr" class="odt-ltr-term">nuxt-09/abcd</bdi></span></strong><span style="color: #000000">]. ونظرًا لأن صفحة [<bdi dir="ltr" class="odt-ltr-term">abcd</bdi>] غير موجودة، فسيتم عرض صفحة [_.vue]. وهنا، سيبدو الأمر كما يلي:</span></p>
 <p><img src="images/10000000000007C200000290EE453908.png" width="496" height="164" style="width:13.13cm;height:4.337cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000007C200000290EE453908.png" /></p>
-<p><span style="color: #000000">فيما يلي كود صفحة [_.<bdi dir="ltr" class="odt-ltr-term">vue</bdi>]:</span></p>
+<p><span style="color: #000000">فيما يلي كود صفحة [_.vue]:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;!-- définition HTML de la vue --&gt;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;</span>template<span style="color:#0000ff">&gt;</span></span></span>
@@ -976,9 +976,9 @@
   </li>
   <li><span style="color: #000000">الأسطر 15–21: نكرر المصفوفة لتحديد ترتيب التنقل المطلوب؛</span>
   </li>
-  <li><span style="color: #000000">السطر 16: إذا وجدنا أن <bdi dir="ltr" class="odt-ltr-term">routes</bdi>[<bdi dir="ltr" class="odt-ltr-term">i</bdi>] كانت آخر صفحة تم التنقل إليها، فإن الصفحة التالية يجب أن تكون <bdi dir="ltr" class="odt-ltr-term">routes</bdi>[<bdi dir="ltr" class="odt-ltr-term">i+1</bdi>]؛</span>
+  <li><span style="color: #000000">السطر 16: إذا وجدنا أن <bdi dir="ltr" class="odt-ltr-term">routes</bdi>[i] كانت آخر صفحة تم التنقل إليها، فإن الصفحة التالية يجب أن تكون <bdi dir="ltr" class="odt-ltr-term">routes</bdi>[<bdi dir="ltr" class="odt-ltr-term">i+1</bdi>]؛</span>
   </li>
-  <li><span style="color: #000000">السطران 18-19: إذا لم يكن الأمر كذلك، فإننا نعيد توجيه التطبيق إلى <bdi dir="ltr" class="odt-ltr-term">routes</bdi>[<bdi dir="ltr" class="odt-ltr-term">i</bdi>]، أي أننا لا نغير الصفحات: نرفض التنقل؛</span>
+  <li><span style="color: #000000">السطران 18-19: إذا لم يكن الأمر كذلك، فإننا نعيد توجيه التطبيق إلى <bdi dir="ltr" class="odt-ltr-term">routes</bdi>[i]، أي أننا لا نغير الصفحات: نرفض التنقل؛</span>
   </li>
 </ul>
 <h2 id="123">12.3. <span style="color: #4f81bd">التنفيذ</span></h2>

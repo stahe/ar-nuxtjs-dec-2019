@@ -1201,7 +1201,7 @@
 <a id="__codelineno-1-5" name="__codelineno-1-5"></a>  <span class="mi">129</span><span class="p">:</span><span class="mi">27</span>  <span class="n">error</span>  <span class="n">Expected</span> <span class="s1">&#39;!==&#39;</span> <span class="ow">and</span> <span class="n">instead</span> <span class="n">saw</span> <span class="s1">&#39;!=&#39;</span>  <span class="n">eqeqeq</span>
 <a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="mi">150</span><span class="p">:</span><span class="mi">28</span>  <span class="n">error</span>  <span class="n">Expected</span> <span class="s1">&#39;!==&#39;</span> <span class="ow">and</span> <span class="n">instead</span> <span class="n">saw</span> <span class="s1">&#39;!=&#39;</span>  <span class="n">eqeqeq</span>
 </code></pre></div></td></tr></table></div>
-<p>يمكننا أن نرى أن الأمر [<bdi dir="ltr" class="odt-ltr-term">dev</bdi>] المقترن بوحدة [<bdi dir="ltr" class="odt-ltr-term">eslint</bdi>] أكثر صرامة، من الناحية النحوية، من الأمر [<bdi dir="ltr" class="odt-ltr-term">build</bdi>]. هنا، يتطلب الأمر أن يُكتب عامل المقارنة [!=] على أنه [!==]، وهو عامل أكثر صرامة (كما أنه يتحقق من نوع المعاملات). تحدث هذه الأخطاء في صفحة [<bdi dir="ltr" class="odt-ltr-term">index.vue</bdi>].</p>
+<p>يمكننا أن نرى أن الأمر [dev] المقترن بوحدة [<bdi dir="ltr" class="odt-ltr-term">eslint</bdi>] أكثر صرامة، من الناحية النحوية، من الأمر [<bdi dir="ltr" class="odt-ltr-term">build</bdi>]. هنا، يتطلب الأمر أن يُكتب عامل المقارنة [!=] على أنه [!==]، وهو عامل أكثر صرامة (كما أنه يتحقق من نوع المعاملات). تحدث هذه الأخطاء في صفحة [<bdi dir="ltr" class="odt-ltr-term">index.vue</bdi>].</p>
 <p>نقوم بتصحيح الأخطاء المذكورة أعلاه ونعيد تشغيل المشروع. ثم نتلقى تحذيرًا من الوحدة النمطية [<bdi dir="ltr" class="odt-ltr-term">eslint</bdi>]:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
 <span class="normal"><a href="#__codelineno-2-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="n">c</span><span class="p">:</span>\<span class="n">Data</span>\<span class="n">st</span><span class="o">-</span><span class="mi">2019</span>\<span class="n">dev</span>\<span class="n">nuxtjs</span>\<span class="n">dvp</span>\<span class="n">nuxt</span><span class="o">-</span><span class="mi">20</span>\<span class="n">components</span>\<span class="n">menu</span><span class="o">.</span><span class="n">vue</span>
@@ -1211,7 +1211,7 @@
 <p>نقوم بإصلاح هذا الخطأ باستخدام [الإصلاح السريع] من وحدة [<bdi dir="ltr" class="odt-ltr-term">eslint</bdi>] [2].</p>
 <p>نعيد تشغيل المشروع. لم تعد هناك أخطاء في التحويل البرمجي. ثم نطلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [<bdi dir="ltr" class="odt-ltr-term">http://localhost:81/nuxt-20/</bdi>] في متصفح. نحصل على خطأ في وقت التشغيل:</p>
 <p><img src="images/100000000000056F00000364C8CEAED2.png" width="417" height="260" style="width:11.04cm;height:6.89cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000056F00000364C8CEAED2.png" /></p>
-<p>الخطأ موجود في [<bdi dir="ltr" class="odt-ltr-term">index.vue</bdi>] [2]. ينشأ الخطأ [1] من حقيقة أنه في [<bdi dir="ltr" class="odt-ltr-term">vuejs-22</bdi>]، كانت طبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] متاحة في [<bdi dir="ltr" class="odt-ltr-term">this.</bdi>$<bdi dir="ltr" class="odt-ltr-term">dao</bdi>]، بينما في [<bdi dir="ltr" class="odt-ltr-term">nuxt-12</bdi>]، التي اعتمدنا بنيتها التحتية، فهي متاحة في الدالة [<bdi dir="ltr" class="odt-ltr-term">this.</bdi>$<bdi dir="ltr" class="odt-ltr-term">dao</bdi>()].</p>
+<p>الخطأ موجود في [<bdi dir="ltr" class="odt-ltr-term">index.vue</bdi>] [2]. ينشأ الخطأ [1] من حقيقة أنه في [<bdi dir="ltr" class="odt-ltr-term">vuejs-22</bdi>]، كانت طبقة [dao] متاحة في [<bdi dir="ltr" class="odt-ltr-term">this.</bdi>$dao]، بينما في [<bdi dir="ltr" class="odt-ltr-term">nuxt-12</bdi>]، التي اعتمدنا بنيتها التحتية، فهي متاحة في الدالة [<bdi dir="ltr" class="odt-ltr-term">this.</bdi>$dao()].</p>
 <p>الخطأ موجود في الدالة [<bdi dir="ltr" class="odt-ltr-term">created</bdi>] لدورة حياة صفحة [<bdi dir="ltr" class="odt-ltr-term">index</bdi>]:</p>
 <p><img src="images/1000000000000461000001DE3F753021.png" width="561" height="239" style="width:14.833cm;height:6.325cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000461000001DE3F753021.png" /></p>
 <p>في الوقت الحالي، سنقوم ببساطة بتغيير اسم [<bdi dir="ltr" class="odt-ltr-term">created</bdi>] إلى [<bdi dir="ltr" class="odt-ltr-term">created2</bdi>] حتى لا يتم تنفيذ وظيفة دورة حياة [<bdi dir="ltr" class="odt-ltr-term">created</bdi>] [3].</p>
@@ -1220,7 +1220,7 @@
 <h2 id="173-2">17.3. <span style="color: #4f81bd">الخطوة 2</span></h2>
 <p>استخدمت صفحات مشروع [<bdi dir="ltr" class="odt-ltr-term">vuejs-22</bdi>] العناصر المُدرجة التالية:</p>
 <ul>
-  <li>$<bdi dir="ltr" class="odt-ltr-term">dao:</bdi> لطبقة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] في عميل [<bdi dir="ltr" class="odt-ltr-term">vue.js</bdi>]؛
+  <li>$<bdi dir="ltr" class="odt-ltr-term">dao:</bdi> لطبقة [dao] في عميل [<bdi dir="ltr" class="odt-ltr-term">vue.js</bdi>]؛
   </li>
   <li>$<bdi dir="ltr" class="odt-ltr-term">session:</bdi> لجلسة عمل مخزنة في [<bdi dir="ltr" class="odt-ltr-term">localStorage</bdi>] بالمتصفح؛
   </li>
@@ -1228,7 +1228,7 @@
 
 <p>لم تعد هذه العناصر موجودة في البنية التحتية لمشروع [<bdi dir="ltr" class="odt-ltr-term">nuxt-12</bdi>] الذي قمنا بنسخه:</p>
 <ul>
-  <li>يوجد الآن طبقتان [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>]، واحدة لعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] والأخرى لخادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]. وكلاهما متاحان عبر <b>دالة</b> مُدرجة تسمى [$<bdi dir="ltr" class="odt-ltr-term">dao</bdi>]. وهذا يعني أنه في صفحات التطبيق، يجب استبدال [<bdi dir="ltr" class="odt-ltr-term">this.</bdi>$<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] بـ [<b><bdi dir="ltr" class="odt-ltr-term">this.</bdi>$<bdi dir="ltr" class="odt-ltr-term">dao</bdi>()</b>]؛
+  <li>يوجد الآن طبقتان [dao]، واحدة لعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] والأخرى لخادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]. وكلاهما متاحان عبر <b>دالة</b> مُدرجة تسمى [$dao]. وهذا يعني أنه في صفحات التطبيق، يجب استبدال [<bdi dir="ltr" class="odt-ltr-term">this.</bdi>$dao] بـ [<b><bdi dir="ltr" class="odt-ltr-term">this.</bdi>$dao()</b>]؛
   </li>
   <li>لم تعد جلسة [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] التي يديرها تطبيق [<bdi dir="ltr" class="odt-ltr-term">nuxt-20</bdi>] لها أي علاقة بكائن [$<bdi dir="ltr" class="odt-ltr-term">session</bdi>] من تطبيق [<bdi dir="ltr" class="odt-ltr-term">vuejs-22</bdi>]، حيث لم يكن هناك مفهوم لملفات تعريف الارتباط الخاصة بالجلسة. ومع ذلك، فإنها تخدم غرضًا مشابهًا: تخزين المعلومات الدائمة أثناء تفاعل المستخدم مع التطبيق. تخزن جلسة [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] المعلومات في المخزن بدلاً من تخزينها مباشرة في الجلسة. في صفحات التطبيق، يجب استبدال [<bdi dir="ltr" class="odt-ltr-term">this.</bdi>$<bdi dir="ltr" class="odt-ltr-term">session</bdi>] بـ [<b><bdi dir="ltr" class="odt-ltr-term">this.</bdi>$<bdi dir="ltr" class="odt-ltr-term">store</bdi></b>] عند تخزين المعلومات في الجلسة، وبـ [<b><bdi dir="ltr" class="odt-ltr-term">this.</bdi>$<bdi dir="ltr" class="odt-ltr-term">session</bdi>()</b>] عند التعامل مع الجلسة نفسها؛
   </li>
@@ -1441,7 +1441,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content">const <span style="font-weight:bold">session</span>=this.$session()</span></span>
 </code></pre></div>
 
-<p>ثم استخدام المتغير [<bdi dir="ltr" class="odt-ltr-term">session</bdi>]. وينطبق نفس المنطق على الدالة [<strong><bdi dir="ltr" class="odt-ltr-term">this.</bdi>$<bdi dir="ltr" class="odt-ltr-term">dao</bdi>()</strong>].</p>
+<p>ثم استخدام المتغير [<bdi dir="ltr" class="odt-ltr-term">session</bdi>]. وينطبق نفس المنطق على الدالة [<strong><bdi dir="ltr" class="odt-ltr-term">this.</bdi>$dao()</strong>].</p>
 <p>بعد إجراء هذه التصحيحات، يمكننا إعادة تحميل عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [<bdi dir="ltr" class="odt-ltr-term">http://localhost:81/nuxt-20/</bdi>] في المتصفح. وما زلنا نحصل على نفس الصفحة كما في السابق:</p>
 <p><img src="images/10000000000007CD00000519C4108692.png" width="499" height="326" style="width:13.212cm;height:8.634cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000007CD00000519C4108692.png" /></p>
 <p>دعونا نلقي نظرة على سجلات المتصفح:</p>
@@ -1518,13 +1518,13 @@
 
 <p>يبدو أن المشكلة الرئيسية هنا هي عدم وجود بيانات [<bdi dir="ltr" class="odt-ltr-term">this.</bdi>$<bdi dir="ltr" class="odt-ltr-term">métier</bdi>]. لحل هذه المشكلة، سنقوم بما يلي:</p>
 <ul>
-  <li>إدراج فئة [<bdi dir="ltr" class="odt-ltr-term">Métier</bdi>] من مثال [<bdi dir="ltr" class="odt-ltr-term">vuejs-22</bdi>]. سنضعها في مجلد [<bdi dir="ltr" class="odt-ltr-term">api</bdi>]؛
+  <li>إدراج فئة [<bdi dir="ltr" class="odt-ltr-term">Métier</bdi>] من مثال [<bdi dir="ltr" class="odt-ltr-term">vuejs-22</bdi>]. سنضعها في مجلد [api]؛
   </li>
   <li>إدخال دالة [$<bdi dir="ltr" class="odt-ltr-term">métier</bdi>] في سياق عميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]، مما سيتيح الوصول إلى هذه الفئة؛
   </li>
 </ul>
 
-<p>أولاً، انسخ فئة [<bdi dir="ltr" class="odt-ltr-term">Métier</bdi>] إلى مجلد [<bdi dir="ltr" class="odt-ltr-term">api</bdi>]:</p>
+<p>أولاً، انسخ فئة [<bdi dir="ltr" class="odt-ltr-term">Métier</bdi>] إلى مجلد [api]:</p>
 <p><img src="images/10000000000002CC000000E4FF74401A.png" width="358" height="114" style="width:9.47cm;height:3.016cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002CC000000E4FF74401A.png" /></p>
 <p>بمجرد أن تصبح فئة [<bdi dir="ltr" class="odt-ltr-term">Métier</bdi>] في المشروع، سننشئ مكونًا إضافيًا جديدًا لعميل [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]. سيقوم هذا المكون الإضافي، المسمى [<bdi dir="ltr" class="odt-ltr-term">pluginMétier</bdi>]، بإدخال دالة [$<bdi dir="ltr" class="odt-ltr-term">métier</bdi>] التي توفر الوصول إلى فئة [<bdi dir="ltr" class="odt-ltr-term">Métier</bdi>]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
@@ -2783,7 +2783,7 @@
   </li>
   <li>الأسطر 88-95: يتم تحديث المخزن اعتمادًا على ما إذا كان سيتم إعادة التوجيه أم لا؛
   </li>
-  <li>السطر 94: لا توجد إعادة توجيه. لذلك، يصبح [<bdi dir="ltr" class="odt-ltr-term">to</bdi>] الحالي هو [<bdi dir="ltr" class="odt-ltr-term">from</bdi>] للتوجيه التالي؛
+  <li>السطر 94: لا توجد إعادة توجيه. لذلك، يصبح [to] الحالي هو [<bdi dir="ltr" class="odt-ltr-term">from</bdi>] للتوجيه التالي؛
   </li>
   <li>الأسطر 96–99: يتم حفظ معلومات المخزن في ملف تعريف ارتباط الجلسة [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]؛
   </li>
