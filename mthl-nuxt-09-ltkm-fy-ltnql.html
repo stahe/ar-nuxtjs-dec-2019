@@ -944,13 +944,13 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 3: نعلم أن دالة التوجيه تأخذ معلمة واحدة فقط، وهي كائن [<bdi dir="ltr" class="odt-ltr-term">context</bdi>] للكيان الذي ينفذها، سواء كان الخادم أو العميل. الترميز [<span style="color: #0000ff"><bdi dir="ltr" class="odt-ltr-term">function</bdi></span><span style="color: #000000">({ <bdi dir="ltr" class="odt-ltr-term">route</bdi>, <bdi dir="ltr" class="odt-ltr-term">from</bdi>, <bdi dir="ltr" class="odt-ltr-term">redirect</bdi> })]</span>
+  <li>السطر 3: نعلم أن دالة التوجيه تأخذ معلمة واحدة فقط، وهي كائن [<bdi dir="ltr" class="odt-ltr-term">context</bdi>] للكيان الذي ينفذها، سواء كان الخادم أو العميل. الترميز [<span style="color: #0000ff"><bdi dir="ltr" class="odt-ltr-term">function</bdi></span><span style="color: #000000">({ <bdi dir="ltr" class="odt-ltr-term">route, from, redirect</bdi> })]</span>
     <ul>
-      <li><span style="color: #000000">مكافئ لـ [</span><span style="color: #0000ff"><bdi dir="ltr" class="odt-ltr-term">function</bdi></span><span style="color: #000000">({ <bdi dir="ltr" class="odt-ltr-term">route:route</bdi>, <bdi dir="ltr" class="odt-ltr-term">from:from</bdi>, <bdi dir="ltr" class="odt-ltr-term">redirect:redirect</bdi> })]؛</span>
+      <li><span style="color: #000000">مكافئ لـ [</span><span style="color: #0000ff"><bdi dir="ltr" class="odt-ltr-term">function</bdi></span><span style="color: #000000">({ <bdi dir="ltr" class="odt-ltr-term">route:route, from:from, redirect:redirect</bdi> })]؛</span>
       </li>
-      <li><span style="color: #000000">مما يعني أن { <bdi dir="ltr" class="odt-ltr-term">route:route</bdi>, <bdi dir="ltr" class="odt-ltr-term">from:from</bdi>, <bdi dir="ltr" class="odt-ltr-term">redirect:redirect</bdi> } &lt;-- <bdi dir="ltr" class="odt-ltr-term">context</bdi>;</span>
+      <li><span style="color: #000000">مما يعني أن { <bdi dir="ltr" class="odt-ltr-term">route:route, from:from, redirect:redirect</bdi> } &lt;-- <bdi dir="ltr" class="odt-ltr-term">context</bdi>;</span>
       </li>
-      <li><span style="color: #000000">مما ينتج عنه ثلاثة معلمات [<bdi dir="ltr" class="odt-ltr-term">route</bdi>, <bdi dir="ltr" class="odt-ltr-term">from</bdi>, <bdi dir="ltr" class="odt-ltr-term">redirect</bdi>] مثل:</span>
+      <li><span style="color: #000000">مما ينتج عنه ثلاثة معلمات [<bdi dir="ltr" class="odt-ltr-term">route, from, redirect</bdi>] مثل:</span>
         <ul>
           <li><span style="color: #000000"><bdi dir="ltr" class="odt-ltr-term">route</bdi>=<bdi dir="ltr" class="odt-ltr-term">context.route</bdi>;</span>
           </li>

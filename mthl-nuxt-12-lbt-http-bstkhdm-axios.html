@@ -1320,7 +1320,7 @@
 
 <ol>
     <ul>
-      <li>[المصادقة]: تتوافق مع صفحة [المصادقة]. ترسل هذه الصفحة طلب مصادقة إلى خادم حساب الضرائب باستخدام بيانات الاعتماد [<bdi dir="ltr" class="odt-ltr-term">admin</bdi>, <bdi dir="ltr" class="odt-ltr-term">admin</bdi>]، وهي البيانات الوحيدة المصرح بها حاليًا. النتيجة المعروضة مشابهة لـ [3]؛
+      <li>[المصادقة]: تتوافق مع صفحة [المصادقة]. ترسل هذه الصفحة طلب مصادقة إلى خادم حساب الضرائب باستخدام بيانات الاعتماد [<bdi dir="ltr" class="odt-ltr-term">admin, admin</bdi>]، وهي البيانات الوحيدة المصرح بها حاليًا. النتيجة المعروضة مشابهة لـ [3]؛
       </li>
       <li>[طلب بيانات الإدارة]: تتوافق مع صفحة [<bdi dir="ltr" class="odt-ltr-term">get-admindata</bdi>]. تطلب هذه الصفحة بيانات من خادم حساب الضرائب — المشار إليها هنا بـ [<bdi dir="ltr" class="odt-ltr-term">adminData</bdi>] — والتي تتيح حساب الضرائب. النتيجة المعروضة مشابهة لـ [3]؛
       </li>
@@ -1339,7 +1339,7 @@
 </ul>
 
 <p>سنستخدم الإصدار 14 من خادم حساب الضرائب الذي تم تطويره في الوثيقة <a href="https://tahe.developpez.com/tutoriels-cours/php7"><u><span style="color: #0563c1">|مقدمة إلى </span></u></a><a href="https://tahe.developpez.com/tutoriels-cours/php7"><u><span style="color: #0563c1"><bdi dir="ltr" class="odt-ltr-term">PHP7</bdi> </span></u></a><a href="https://tahe.developpez.com/tutoriels-cours/php7"><u><span style="color: #0563c1">من خلال</span></u></a> الأمثلة|. سنستخدم جزءًا فقط من واجهة برمجة التطبيقات (<bdi dir="ltr" class="odt-ltr-term">API</bdi>) <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> الخاصة به:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0; background-color:#dddddd; padding:0.35em 0.6em"><b>الطلب</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>الاستجابة</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0; background-color:#dddddd; padding:0.35em 0.6em"><b>الطلب</b></div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0"><b>الاستجابة</b></div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">2</a></span>
 <span class="normal"><a href="#__codelineno-0-3">3</a></span>
@@ -1352,33 +1352,33 @@
 <a id="__codelineno-0-5" name="__codelineno-0-5"></a>
 <a id="__codelineno-0-6" name="__codelineno-0-6"></a>GET main.php?action=init-session&amp;type=json
 </code></pre></div></td></tr></table></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content">{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#a31515">&quot;action&quot;</span>: &quot;init-session&quot;,</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#a31515">&quot;الحالة&quot;</span>: 700،</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#a31515">&quot;response&quot;</span>: &quot;بدأت الجلسة بنوع [json]&quot;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-</code></pre></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
+</code></pre></div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content">[مصادقة المستخدم]</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">[يتم تخزين المصادقة في</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">جلسة PHP]</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">POST main.php?action=authenticate-user</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">المعلمات المرسلة: <span style="font-weight:bold">user, admin</span></span></span>
-</code></pre></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
+</code></pre></div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content">{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#a31515">&quot;action&quot;</span>: &quot;authenticate-user&quot;,</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#a31515">&quot;status&quot;</span>:<span style="color:#09885a"> 200</span>,</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#a31515">&quot;response&quot;</span>: &quot;تمت المصادقة بنجاح [admin, admin]&quot;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-</code></pre></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
+</code></pre></div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content">[طلب بيانات إدارة الضرائب</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">البيانات]</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">[يتم تخزين البيانات المستلمة في</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">جلسة PHP]</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">GET main.php?<span style="font-weight:bold">action=get-admindata</span></span></span>
-</code></pre></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
+</code></pre></div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content">{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#a31515">&quot;action&quot;</span>: &quot;get-admindata&quot;,</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#a31515">&quot;status&quot;</span>:<span style="color:#09885a"> 1000</span>,</span></span>
@@ -1416,7 +1416,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content">        &quot;الحد الأدنى للخصم بنسبة 10%&quot;:<span style="color:#09885a"> 437</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-</code></pre></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
+</code></pre></div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content">[نهاية جلسة PHP مع</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">حساب الضريبة]</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">[حذف جلسة PHP الحالية وإنشاء</span></span>
@@ -1425,7 +1425,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content">لم يعد مصدقاً عليه]</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">GET main.php?<span style="font-weight:bold">action=end-session</span></span></span>
-</code></pre></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
+</code></pre></div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content">{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#a31515">&quot;action&quot;</span>: &quot;end-session&quot;,</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#a31515">&quot;status&quot;</span>:<span style="color:#09885a"> 400</span>,</span></span>
@@ -2914,7 +2914,7 @@
   </li>
   <li>السطر 36: يتم استرداد طبقة [dao] من خادم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>]؛
   </li>
-  <li>السطر 37: نقوم بالمصادقة مع خادم حساب الضرائب باستخدام بيانات اعتماد الاختبار [<bdi dir="ltr" class="odt-ltr-term">admin</bdi>, <bdi dir="ltr" class="odt-ltr-term">admin</bdi>]، وهي البيانات الوحيدة التي يقبلها خادم حساب الضرائب؛
+  <li>السطر 37: نقوم بالمصادقة مع خادم حساب الضرائب باستخدام بيانات اعتماد الاختبار [<bdi dir="ltr" class="odt-ltr-term">admin, admin</bdi>]، وهي البيانات الوحيدة التي يقبلها خادم حساب الضرائب؛
   </li>
   <li>السطر 41: لا تنجح عملية المصادقة إلا إذا كانت حالة الاستجابة 200؛
   </li>

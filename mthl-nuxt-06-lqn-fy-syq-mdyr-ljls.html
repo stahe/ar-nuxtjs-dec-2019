@@ -960,7 +960,7 @@
 
 <p><img src="images/10000000000001640000024711C4FD7E.png" width="142" height="233" style="width:3.769cm;height:6.172cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001640000024711C4FD7E.png" /></p>
 <h2 id="93-session">9.3. <span style="color: #4f81bd">المكوّن الإضافي [<bdi dir="ltr" class="odt-ltr-term">session</bdi>] للخادم</span></h2>
-<p>المكوّن الإضافي [<bdi dir="ltr" class="odt-ltr-term">server</bdi> / <bdi dir="ltr" class="odt-ltr-term">session.js</bdi>] هو كما يلي:</p>
+<p>المكوّن الإضافي [<bdi dir="ltr" class="odt-ltr-term">server / session.js</bdi>] هو كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
 <span class="odt-code-line"><span class="odt-code-line-content">/* eslint-disable no-console */</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">export</span> <span style="color:#0000ff">default</span> (context, inject) =&gt; {</span></span>
@@ -1012,7 +1012,7 @@
       </li>
     </ul>
   </li>
-  <li>الغرض من المكون الإضافي [<bdi dir="ltr" class="odt-ltr-term">server</bdi> / <bdi dir="ltr" class="odt-ltr-term">session</bdi>] مزدوج:
+  <li>الغرض من المكون الإضافي [<bdi dir="ltr" class="odt-ltr-term">server / session</bdi>] مزدوج:
     <ul>
       <li>تحديد جلسة (الأسطر 16–23)؛
       </li>
@@ -1024,7 +1024,7 @@
   </li>
   <li>الأسطر 20-22: تحتوي على دالة [<bdi dir="ltr" class="odt-ltr-term">save</bdi>] تأخذ كائن [<bdi dir="ltr" class="odt-ltr-term">context</bdi>] كمعلمة. يوفر كود الاستدعاء هذا السياق. باستخدامه، تحفظ دالة [<bdi dir="ltr" class="odt-ltr-term">save</bdi>] قيمة الجلسة، كائن [<bdi dir="ltr" class="odt-ltr-term">value</bdi>]، في ملف تعريف ارتباط الجلسة؛
   </li>
-  <li>السطر 6: عند تشغيل المكون الإضافي [<bdi dir="ltr" class="odt-ltr-term">server</bdi> / <bdi dir="ltr" class="odt-ltr-term">session</bdi>]، يتحقق أولاً مما إذا كان الخادم قد تلقى ملف تعريف ارتباط الجلسة؛
+  <li>السطر 6: عند تشغيل المكون الإضافي [<bdi dir="ltr" class="odt-ltr-term">server / session</bdi>]، يتحقق أولاً مما إذا كان الخادم قد تلقى ملف تعريف ارتباط الجلسة؛
     <ul>
       <li>إذا كان الأمر كذلك، فإن كائن [<bdi dir="ltr" class="odt-ltr-term">value</bdi>] من السطر 6 يمثل قيمة الجلسة، وهي مجموعة البيانات المُغلفة بداخله؛
       </li>
@@ -1062,7 +1062,7 @@
   </li>
 </ul>
 <h2 id="94">9.4. <span style="color: #4f81bd">تهيئة الجلسة</span></h2>
-<p>بمجرد تنفيذ المكون الإضافي [<bdi dir="ltr" class="odt-ltr-term">session</bdi> / <bdi dir="ltr" class="odt-ltr-term">server</bdi>] بواسطة الخادم، سيقوم الخادم بتنفيذ البرنامج النصي [<bdi dir="ltr" class="odt-ltr-term">store</bdi> / <bdi dir="ltr" class="odt-ltr-term">index.js</bdi>] التالي:</p>
+<p>بمجرد تنفيذ المكون الإضافي [<bdi dir="ltr" class="odt-ltr-term">session / server</bdi>] بواسطة الخادم، سيقوم الخادم بتنفيذ البرنامج النصي [<bdi dir="ltr" class="odt-ltr-term">store / index.js</bdi>] التالي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
 <span class="odt-code-line"><span class="odt-code-line-content">/* eslint-disable no-console */</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">export</span> <span style="color:#0000ff">const</span> state = () =&gt; ({</span></span>
@@ -1157,8 +1157,8 @@
   <li>السطر 61: يتم حفظ الجلسة في ملف تعريف الارتباط الخاص بالجلسة. لاحظ أن هذا يتضمن وضع ملف تعريف الارتباط في استجابة <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> التي سيرسلها الخادم إلى متصفح العميل؛
   </li>
 </ul>
-<h2 id="95-client-session">9.5. <span style="color: #4f81bd">المكوّن الإضافي [<bdi dir="ltr" class="odt-ltr-term">client</bdi> / <bdi dir="ltr" class="odt-ltr-term">session</bdi>] الخاص بالعميل</span></h2>
-<p>بمجرد أن يقوم الخادم بتنفيذ البرامج النصية [<bdi dir="ltr" class="odt-ltr-term">plugins</bdi> / <bdi dir="ltr" class="odt-ltr-term">server</bdi> / <bdi dir="ltr" class="odt-ltr-term">session</bdi>] و [<bdi dir="ltr" class="odt-ltr-term">store</bdi> / <bdi dir="ltr" class="odt-ltr-term">index</bdi>]، سيرسل إحدى الصفحات [<bdi dir="ltr" class="odt-ltr-term">index</bdi>، <bdi dir="ltr" class="odt-ltr-term">page1</bdi>] إلى متصفح العميل. ستتضمن استجابة <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> للخادم ملف تعريف ارتباط الجلسة. بمجرد استلام الصفحة بواسطة متصفح العميل، سيتم تنفيذ البرامج النصية من جانب العميل المضمنة في الصفحة. سيتم بعد ذلك تنفيذ المكون الإضافي [<bdi dir="ltr" class="odt-ltr-term">client</bdi> / <bdi dir="ltr" class="odt-ltr-term">session</bdi>]:</p>
+<h2 id="95-client-session">9.5. <span style="color: #4f81bd">المكوّن الإضافي [<bdi dir="ltr" class="odt-ltr-term">client / session</bdi>] الخاص بالعميل</span></h2>
+<p>بمجرد أن يقوم الخادم بتنفيذ البرامج النصية [<bdi dir="ltr" class="odt-ltr-term">plugins / server / session</bdi>] و [<bdi dir="ltr" class="odt-ltr-term">store / index</bdi>]، سيرسل إحدى الصفحات [<bdi dir="ltr" class="odt-ltr-term">index</bdi>، <bdi dir="ltr" class="odt-ltr-term">page1</bdi>] إلى متصفح العميل. ستتضمن استجابة <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> للخادم ملف تعريف ارتباط الجلسة. بمجرد استلام الصفحة بواسطة متصفح العميل، سيتم تنفيذ البرامج النصية من جانب العميل المضمنة في الصفحة. سيتم بعد ذلك تنفيذ المكون الإضافي [<bdi dir="ltr" class="odt-ltr-term">client / session</bdi>]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
 <span class="odt-code-line"><span class="odt-code-line-content">/* eslint-disable no-console */</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">export</span> <span style="color:#0000ff">default</span> (context, inject) =&gt; {</span></span>

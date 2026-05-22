@@ -1326,7 +1326,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;/</span>script<span style="color:#0000ff">&gt;</span></span></span>
 </code></pre></div>
 
-<p>عندما يقوم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] بعرض صفحة [<bdi dir="ltr" class="odt-ltr-term">error.vue</bdi>]، فإنه يمرر الخطأ الذي حدث إليه كخاصية [<bdi dir="ltr" class="odt-ltr-term">props</bdi>] (السطر 33). إذا كان الخطأ ناتجًا عن [<bdi dir="ltr" class="odt-ltr-term">context.error</bdi>(<strong><bdi dir="ltr" class="odt-ltr-term">object1</bdi></strong>)]، فستكون قيمة خاصية [<bdi dir="ltr" class="odt-ltr-term">props</bdi>] لصفحة [<bdi dir="ltr" class="odt-ltr-term">error.vue</bdi>] هي [<strong><bdi dir="ltr" class="odt-ltr-term">object1</bdi></strong>]. تنص وثائق [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] على أن [<bdi dir="ltr" class="odt-ltr-term">object1</bdi>] يجب أن تحتوي على الأقل على سمات [<bdi dir="ltr" class="odt-ltr-term">statusCode</bdi>, <bdi dir="ltr" class="odt-ltr-term">message</bdi>]. يعرض السطر 9 سلسلة <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> للكائن [<bdi dir="ltr" class="odt-ltr-term">object1</bdi>] المستلم.</p>
+<p>عندما يقوم [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] بعرض صفحة [<bdi dir="ltr" class="odt-ltr-term">error.vue</bdi>]، فإنه يمرر الخطأ الذي حدث إليه كخاصية [<bdi dir="ltr" class="odt-ltr-term">props</bdi>] (السطر 33). إذا كان الخطأ ناتجًا عن [<bdi dir="ltr" class="odt-ltr-term">context.error</bdi>(<strong><bdi dir="ltr" class="odt-ltr-term">object1</bdi></strong>)]، فستكون قيمة خاصية [<bdi dir="ltr" class="odt-ltr-term">props</bdi>] لصفحة [<bdi dir="ltr" class="odt-ltr-term">error.vue</bdi>] هي [<strong><bdi dir="ltr" class="odt-ltr-term">object1</bdi></strong>]. تنص وثائق [<bdi dir="ltr" class="odt-ltr-term">nuxt</bdi>] على أن [<bdi dir="ltr" class="odt-ltr-term">object1</bdi>] يجب أن تحتوي على الأقل على سمات [<bdi dir="ltr" class="odt-ltr-term">statusCode, message</bdi>]. يعرض السطر 9 سلسلة <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> للكائن [<bdi dir="ltr" class="odt-ltr-term">object1</bdi>] المستلم.</p>
 <h2 id="145-page2">14.5. <span style="color: #4f81bd">الصفحة [<bdi dir="ltr" class="odt-ltr-term">page2</bdi>]</span></h2>
 <p>تُظهر صفحة [<bdi dir="ltr" class="odt-ltr-term">page2</bdi>] طريقة أخرى للتعامل مع الخطأ:</p>
 <ul>
@@ -1411,7 +1411,7 @@
 
 <p>مرة أخرى، نقوم بإدراج دالة [<bdi dir="ltr" class="odt-ltr-term">asyncData</bdi>] في كود الصفحة، ومثل [<bdi dir="ltr" class="odt-ltr-term">index</bdi>]، ستولد [<bdi dir="ltr" class="odt-ltr-term">page2</bdi>] خطأً سنعالجه بشكل مختلف هذه المرة.</p>
 <ul>
-  <li>السطر 44: يقوم كل من الخادم والعميل بحل الوعد بنجاح عن طريق إرجاع النتيجة [<span style="color: #000000"><mark style="background-color: #ffff00">{ <bdi dir="ltr" class="odt-ltr-term">showErrorLoading:</bdi> </mark></span><span style="color: #0000ff"><mark style="background-color: #ffff00"><bdi dir="ltr" class="odt-ltr-term">true</bdi></mark></span><span style="color: #000000"><mark style="background-color: #ffff00">, <bdi dir="ltr" class="odt-ltr-term">errorLoadingMessage</bdi> }</mark></span>]. ونعلم أن هذا سيؤدي إلى تضمين الخصائص [<bdi dir="ltr" class="odt-ltr-term">showErrorLoading</bdi>, <bdi dir="ltr" class="odt-ltr-term">errorLoadingMessage</bdi>] ضمن خصائص [<bdi dir="ltr" class="odt-ltr-term">data</bdi>] للصفحة، وأن العميل سيتلقى هذه الخصائص؛
+  <li>السطر 44: يقوم كل من الخادم والعميل بحل الوعد بنجاح عن طريق إرجاع النتيجة [<span style="color: #000000"><mark style="background-color: #ffff00">{ <bdi dir="ltr" class="odt-ltr-term">showErrorLoading:</bdi> </mark></span><span style="color: #0000ff"><mark style="background-color: #ffff00"><bdi dir="ltr" class="odt-ltr-term">true</bdi></mark></span><span style="color: #000000"><mark style="background-color: #ffff00">, <bdi dir="ltr" class="odt-ltr-term">errorLoadingMessage</bdi> }</mark></span>]. ونعلم أن هذا سيؤدي إلى تضمين الخصائص [<bdi dir="ltr" class="odt-ltr-term">showErrorLoading, errorLoadingMessage</bdi>] ضمن خصائص [<bdi dir="ltr" class="odt-ltr-term">data</bdi>] للصفحة، وأن العميل سيتلقى هذه الخصائص؛
   </li>
   <li>الأسطر 60–67: نعلم أن الدالة [<bdi dir="ltr" class="odt-ltr-term">mounted</bdi>] يتم تنفيذها من قبل العميل فقط؛
   </li>
@@ -1623,7 +1623,7 @@
 <p>دعونا نفحص السجلات المعروضة في المتصفح:</p>
 <p><img src="images/10000000000005E200000405DB47D4BA.png" width="452" height="309" style="width:11.95cm;height:8.165cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000005E200000405DB47D4BA.png" /></p>
 <ul>
-  <li>في [1]، سجلات الخادم. تذكر أن الخادم أدرج الخصائص [<bdi dir="ltr" class="odt-ltr-term">showErrorLoading</bdi>, <bdi dir="ltr" class="odt-ltr-term">errorLoadingMessage</bdi>] في الصفحة المرسلة إلى متصفح العميل. ونعلم أن هذه الخصائص ستُدرج بعد ذلك في [<bdi dir="ltr" class="odt-ltr-term">data</bdi>] للصفحة المعروضة من قبل العميل
+  <li>في [1]، سجلات الخادم. تذكر أن الخادم أدرج الخصائص [<bdi dir="ltr" class="odt-ltr-term">showErrorLoading, errorLoadingMessage</bdi>] في الصفحة المرسلة إلى متصفح العميل. ونعلم أن هذه الخصائص ستُدرج بعد ذلك في [<bdi dir="ltr" class="odt-ltr-term">data</bdi>] للصفحة المعروضة من قبل العميل
   </li>
   <li>في [3]، عند تحميل صفحة [<bdi dir="ltr" class="odt-ltr-term">page2</bdi>]، تجد الخاصية [<bdi dir="ltr" class="odt-ltr-term">showErrorLoading</bdi>] مضبوطة على <bdi dir="ltr" class="odt-ltr-term">true.</bdi> ثم ترسل حدثًا إلى الصفحة [<bdi dir="ltr" class="odt-ltr-term">default</bdi>]، بحيث تعرض رسالة الخطأ المرسلة من الخادم [4]؛
   </li>
@@ -1667,9 +1667,9 @@
   </li>
   <li>في [2]، يتم عرض صورة التحميل؛
   </li>
-  <li>في [2-3]، نرى أن الصفحة [<bdi dir="ltr" class="odt-ltr-term">default</bdi>] قد تلقت الأحداث [<bdi dir="ltr" class="odt-ltr-term">loading</bdi>, <bdi dir="ltr" class="odt-ltr-term">true</bdi>] [2] و [<bdi dir="ltr" class="odt-ltr-term">errorLoading</bdi>, <bdi dir="ltr" class="odt-ltr-term">false</bdi>] المرسلة بواسطة دالة [<bdi dir="ltr" class="odt-ltr-term">asyncData</bdi>] في الصفحة [<bdi dir="ltr" class="odt-ltr-term">index</bdi>] (السطران 5 و 7)؛
+  <li>في [2-3]، نرى أن الصفحة [<bdi dir="ltr" class="odt-ltr-term">default</bdi>] قد تلقت الأحداث [<bdi dir="ltr" class="odt-ltr-term">loading, true</bdi>] [2] و [<bdi dir="ltr" class="odt-ltr-term">errorLoading, false</bdi>] المرسلة بواسطة دالة [<bdi dir="ltr" class="odt-ltr-term">asyncData</bdi>] في الصفحة [<bdi dir="ltr" class="odt-ltr-term">index</bdi>] (السطران 5 و 7)؛
   </li>
-  <li>في [4]، ينتهي الانتظار. تلقت الصفحة [<bdi dir="ltr" class="odt-ltr-term">default</bdi>] الحدث [<bdi dir="ltr" class="odt-ltr-term">loading</bdi>, <bdi dir="ltr" class="odt-ltr-term">false</bdi>] المرسل من الصفحة [<bdi dir="ltr" class="odt-ltr-term">index</bdi>] (السطر 13)؛
+  <li>في [4]، ينتهي الانتظار. تلقت الصفحة [<bdi dir="ltr" class="odt-ltr-term">default</bdi>] الحدث [<bdi dir="ltr" class="odt-ltr-term">loading, false</bdi>] المرسل من الصفحة [<bdi dir="ltr" class="odt-ltr-term">index</bdi>] (السطر 13)؛
   </li>
   <li>في [5]، تنتهي وظيفة [<bdi dir="ltr" class="odt-ltr-term">asyncData</bdi>] من عملها؛
   </li>
@@ -1746,7 +1746,7 @@
 <p>السجلات هي كما يلي:</p>
 <p><img src="images/100000000000066A00000228B83106F2.png" width="493" height="166" style="width:13.032cm;height:4.382cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000066A00000228B83106F2.png" /></p>
 <ul>
-  <li>في [1]، تلقت الصفحة [<bdi dir="ltr" class="odt-ltr-term">default</bdi>] الحدث [<bdi dir="ltr" class="odt-ltr-term">showErrorLoading</bdi>, <bdi dir="ltr" class="odt-ltr-term">true</bdi>] المرسل من [<bdi dir="ltr" class="odt-ltr-term">page2</bdi>] (السطر 29)، والذي يوجهها لعرض رسالة الخطأ؛
+  <li>في [1]، تلقت الصفحة [<bdi dir="ltr" class="odt-ltr-term">default</bdi>] الحدث [<bdi dir="ltr" class="odt-ltr-term">showErrorLoading, true</bdi>] المرسل من [<bdi dir="ltr" class="odt-ltr-term">page2</bdi>] (السطر 29)، والذي يوجهها لعرض رسالة الخطأ؛
   </li>
 </ul>
 
